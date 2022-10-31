@@ -1,4 +1,4 @@
-# my-project
+# F2E_Week1_Parallax
 
 ## Project setup
 ```
