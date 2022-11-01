@@ -2,7 +2,7 @@
 <template>
   <section class="section2 overflow-hidden">
     <ul class="flex flex-wrap">
-      <li class="flex relative justify-end mb-48 item1 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-half mb-48 item1 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
@@ -22,7 +22,7 @@
         </div>
       </li>
 
-      <li class="relative flex justify-end mb-48 item2 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-full mb-48 item2 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-right flex items-center">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier">
@@ -42,7 +42,7 @@
         </div>
       </li>
 
-      <li class="flex relative justify-end item3 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-half item3 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree">
@@ -82,11 +82,16 @@ export default {
             repeatDelay: 0.3,
           }
         )
+        // gsap.from('.ease-text1', { y: 3000, duration: 1, delay: 1 })
+        // gsap.from('.ease-text2', { y: 3000, duration: 1, delay: 1 })
+        // gsap.from('.ease-text3', { y: 3000, duration: 1, delay: 1 })
+
         const hide = (element) => {
           gsap.set(element, { opacity: 0, visibility: "hidden" })
         }
 
         const animated = (element) => {
+          console.log(element)
           let x = 0
 
           //依照條件設定x初始值
@@ -112,6 +117,10 @@ export default {
               overwrite: "auto",
             }
           )
+
+          // gsap.from('.ease-text1', { y: 3000, duration: 1 })
+          // gsap.from('.ease-text2', { y: 3000, duration: 1 })
+          // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
 
         const hideText = (element) => {
@@ -369,6 +378,19 @@ export default {
         right: -20%;
       }
     }
+  }
+
+  .boxwrap-half {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    // width: 50%;
+  }
+  .boxwrap-full {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: end;
   }
 
   .box2 {
