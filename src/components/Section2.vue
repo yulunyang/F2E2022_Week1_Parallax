@@ -2,39 +2,46 @@
 <template>
   <section class="section2 overflow-hidden">
     <ul class="flex flex-wrap">
-      <li class="boxwrap-half mb-48 item1">
+      <li class="boxwrap-half mb-48 item1 w-full xl:w-1/2 flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
           </div>
           <div class="quote-outer absolute">
             <p class="quote">
-              <span class="animation-wrapper typing typing1"></span>
+              <span class="animation-wrapper typing quote_typing1"></span>
               <span class="cursor">_</span>
             </p>
           </div>
         </div>
-        <div class="ease-text ease-text1 absolute z-50">
+        <div class="ease-text ease-text1 absolute z-50 hidden xl:block">
+          <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
+        </div>
+        <div class="w-full xl:hidden mt-24">
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
         </div>
       </li>
-      <li class="boxwrap-full mb-48 item2">
+
+      <li class="boxwrap-full mb-48 item2 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-right flex items-center">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier">
           </div>
           <div class="quote-outer absolute">
             <p class="quote">
-              <span class="animation-wrapper typing typing2"></span>
+              <span class="animation-wrapper typing quote_typing2"></span>
               <span class="cursor">_</span>
             </p>
           </div>
         </div>
-        <div class="ease-text ease-text2 absolute">
+        <div class="ease-text ease-text2 absolute hidden xl:block">
+          <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
+        </div>
+        <div class="w-full xl:hidden mt-24">
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
       </li>
-      <li class="boxwrap-half item3">
+      <li class="boxwrap-half item3 w-full xl:w-1/2 flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree">
@@ -47,7 +54,10 @@
             </p>
           </div> -->
         </div>
-        <div class="ease-text ease-text3 absolute">
+        <div class="ease-text ease-text3 absolute hidden xl:block">
+          <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
+        </div>
+        <div class="w-full xl:hidden mt-24">
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
         </div>
       </li>
@@ -64,9 +74,7 @@ export default {
   setup () {
       const gsapInit = () => {
         gsap.fromTo(".cursor", 0,
-          {
-            visibility: "hidden",
-          },
+          { visibility: "hidden" },
           {
             visibility: "visible",
             repeat: -1,
@@ -74,9 +82,9 @@ export default {
             repeatDelay: 0.3,
           }
         )
-        gsap.from('.ease-text1', { y: 3000, duration: 1, delay: 1 })
-        gsap.from('.ease-text2', { y: 3000, duration: 1, delay: 1 })
-        gsap.from('.ease-text3', { y: 3000, duration: 1, delay: 1 })
+        // gsap.from('.ease-text1', { y: 3000, duration: 1, delay: 1 })
+        // gsap.from('.ease-text2', { y: 3000, duration: 1, delay: 1 })
+        // gsap.from('.ease-text3', { y: 3000, duration: 1, delay: 1 })
 
         const hide = (element) => {
           gsap.set(element, { opacity: 0, visibility: "hidden" })
@@ -86,6 +94,7 @@ export default {
         }
 
         const animated = (element) => {
+          console.log(element)
           let x = 0
 
           //依照條件設定x初始值
@@ -112,9 +121,9 @@ export default {
             }
           )
 
-          gsap.from('.ease-text1', { y: 3000, duration: 1 })
-          gsap.from('.ease-text2', { y: 3000, duration: 1 })
-          gsap.from('.ease-text3', { y: 3000, duration: 1 })
+          // gsap.from('.ease-text1', { y: 3000, duration: 1 })
+          // gsap.from('.ease-text2', { y: 3000, duration: 1 })
+          // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
 
         gsap.utils.toArray(".animation-wrapper").forEach(element => {
@@ -125,7 +134,6 @@ export default {
             hide(element)
             ScrollTrigger.create({
               trigger: element,
-              // markers: true,
               onEnter: function () {
                 animated(element)
               },
@@ -141,20 +149,20 @@ export default {
             const typing1Content = "I’m cool !"
             const typing2Content = "!@#$%..."
 
-            gsap.to(".typing1", {
+            gsap.to(".quote_typing1", {
               text: typing1Content,
               duration: 1.5,
               scrollTrigger: {
-                trigger: ".typing1",
+                trigger: ".quote_typing1",
                 toggleActions: "play pause resume reset"
               }
             })
 
-            gsap.to(".typing2", {
+            gsap.to(".quote_typing2", {
               text: typing2Content,
               duration: 1.5,
               scrollTrigger: {
-                trigger: ".typing2",
+                trigger: ".quote_typing2",
                 toggleActions: "play pause resume reset"
               },
             })
@@ -316,7 +324,7 @@ export default {
     position: relative;
     display: flex;
     justify-content: end;
-    width: 50%;
+    // width: 50%;
   }
   .boxwrap-full {
     position: relative;

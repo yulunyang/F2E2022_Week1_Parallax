@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="Section8 proj-bg-primary relative overflow-hidden">
+  <section class="Section8 proj-bg-primary relative overflow-hidden py-28">
     <diamondLittle class="z-10 top-0 left-0" />
     <diamondMiddle class="z-10 top-0 left-0" />
     <diamondLarge class="z-30 top-0 left-0 absolute" />
-    <div class="proj-container mx-auto px-6 z-20 py-28">
+    <div class="proj-container mx-auto px-6 z-20">
       <h6 class="text-white text-5xl mb-4"><span class="diamond">鑽石級</span>贊助商</h6>
       <div class="flex flex-wrap mb-16">
 
@@ -56,8 +56,8 @@
         </div>
       </div>
     </div>
-  </div>
-</template>ontainer
+  </section>
+</template>
 
 <script>
 // @ is an alias to /src

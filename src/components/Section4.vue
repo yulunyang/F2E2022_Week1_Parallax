@@ -14,7 +14,7 @@
           <img src="@/assets/img/F1.png" alt="" class="mx-auto">
         </div>
         <div class="xl:text-2xl mt-12">
-          <a class="button py-3 cursor-pointer px-6">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week1">查看關卡細節</a>
         </div>
       </div>
     </div>
@@ -28,7 +28,7 @@
           <img src="@/assets/img/F1.png" alt="" class="mx-auto">
         </div>
         <div class="xl:text-2xl mt-12">
-          <a class="button py-3 cursor-pointer px-6">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week2">查看關卡細節</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
           <img src="@/assets/img/F1.png" alt="" class="mx-auto">
         </div>
         <div class="xl:text-2xl mt-12">
-          <a class="button py-3 cursor-pointer px-6">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week3">查看關卡細節</a>
         </div>
       </div>
     </div>
@@ -65,9 +65,9 @@ export default {
           }
         })
 
-        srollTL.to(".gate-left-1", { xPercent: "-100", ease: "ease" });
+        srollTL.to(".gate-left-1", { xPercent: "-100" });
         // srollTL.to(".gate-right-1", { xPercent: "100", ease: "ease" }, "<");
-        srollTL.to(".gate-left-2", { xPercent: "-100", ease: "ease" });
+        srollTL.to(".gate-left-2", { xPercent: "-100" });
         // srollTL.to(".gate-right-2", { xPercent: "100", ease: "ease" }, "<");
       }
     onMounted(()=> {
@@ -91,7 +91,14 @@ export default {
     .car {
       top: 62%;
       left: 48%;
-      // transform: translateX(-50%);
+      @media (max-width: 1440px) {
+        top: 57%;
+        left: 48%;
+      }
+      @media (max-width: 768px) {
+        top: 57%;
+        left: 47%;
+      }
     }
   .week1 {
     background: #B82A06;

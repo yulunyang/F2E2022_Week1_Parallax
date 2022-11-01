@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="Section6 py-48">
-    <h6 class="Section6_title text-5xl text-white leading-relaxed"></h6>
-    <h6 class="Section6_title2 text-5xl text-white leading-relaxed mb-24"></h6>
+  <section class="Section6 py-28">
+    <h6 class="Section6_title1 text-5xl text-white leading-relaxed text-center"></h6>
+    <h6 class="Section6_title2 text-5xl text-white leading-relaxed mb-24 text-center"></h6>
 
     <div class="flex justify-center">
       <div>
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -51,22 +51,22 @@ export default {
     onUnmounted(()=> {
     })
     const setGSAP = () => {
-      gsap.to(".Section6_title", {
+      gsap.to(".Section6_title1", {
         text: "區區修煉已經無法滿足了嗎？",
-        duration: 2,
+        duration: 4,
         scrollTrigger: {
-          trigger: ".typing",
+          trigger: ".Section6_title1",
           toggleActions: "play pause resume reset",
         }
       })
       gsap.to(".Section6_title2", {
         text: "還有比賽等著你！",
-        duration: 1.5,
+        duration: 4,
         scrollTrigger: {
-          trigger: ".typing",
+          trigger: ".Section6_title2",
           toggleActions: "play pause resume reset",
         },
-        delay: 3
+        delay: 4
       })
     }
     return {

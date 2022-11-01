@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="section3 overflow-hidden relative">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
       <defs>
           <!-- Scene 1 Gradient -->
           <linearGradient id="grad1" x1="-154.32" y1="263.27" x2="-154.32" y2="374.3"
@@ -323,7 +323,7 @@
                   fill="url(#grad9)" />
           </g>
       </g>
-    </svg>
+  </svg>
 
   <div class="scrollElement"></div>
 
