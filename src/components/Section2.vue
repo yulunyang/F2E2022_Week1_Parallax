@@ -2,7 +2,7 @@
 <template>
   <section class="section2 overflow-hidden">
     <ul class="flex flex-wrap">
-      <li class="boxwrap-half mb-48 item1 w-full xl:w-1/2 flex-wrap">
+      <li class="boxwrap-half mb-48 item1 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
@@ -41,7 +41,7 @@
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
       </li>
-      <li class="boxwrap-half item3 w-full xl:w-1/2 flex-wrap">
+      <li class="boxwrap-half item3 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree">
@@ -75,8 +75,7 @@ export default {
       const gsapInit = () => {
         gsap.fromTo(".cursor", 0,
           { visibility: "hidden" },
-          {
-            visibility: "visible",
+          { visibility: "visible",
             repeat: -1,
             yoyo: true,
             repeatDelay: 0.3,
@@ -185,7 +184,9 @@ export default {
       onUnmounted(()=> {
       })
 
-      return {gsapInit}
+      return {
+        gsapInit
+      }
   }
 }
 </script>
