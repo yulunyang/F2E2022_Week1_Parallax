@@ -66,7 +66,7 @@ body {
     position: relative;
     display: flex;
     height: 100vh;
-   overflow: hidden;
+    overflow: hidden;
   }
   i {
     font-size: 10rem;
@@ -135,7 +135,4 @@ body {
     color: #ffa09d
   }
 
-.section4 {
-  min-height: 100vh
-}
 </style>

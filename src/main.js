@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './index.css'
+import '@/assets/font/fonts.css'
+import '@/assets/main.scss'
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from "gsap/all";
 
 

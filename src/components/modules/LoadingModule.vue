@@ -1,0 +1,51 @@
+<template>
+  <div class="loading w-full h-screen fixed left-0 top-0 bg-black">
+    <div class="loading-text absolute text-white text-2xl">
+      <p class="typing mb-3"></p>
+      <img src="@/assets/img/car.png" />
+    </div>
+  </div>
+</template>
+
+<script>
+import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
+gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
+import { onMounted, onUnmounted } from 'vue'
+export default {
+  setup () {
+    onMounted(() => {
+      setGSAP()
+      })
+    onUnmounted(() => {
+    })
+    const setGSAP = () => {
+      gsap.to(".typing", {
+        text: "Loading...",
+        duration: 1.5,
+        scrollTrigger: {
+          trigger: ".typing",
+          toggleActions: "play pause resume reset",
+        },
+        repeat: -1
+      })
+    }
+
+    return {
+      setGSAP
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+.loading {
+  .loading-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .typing {
+      min-height: 32px;
+    }
+  }
+}
+</style>
