@@ -2,7 +2,7 @@
 <template>
   <section class="section2 overflow-hidden">
     <ul class="flex flex-wrap">
-      <li class="boxwrap-half mb-48 item1 w-full xl:w-auto flex-wrap">
+      <li class="flex relative justify-end mb-48 item1 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
@@ -22,7 +22,7 @@
         </div>
       </li>
 
-      <li class="boxwrap-full mb-48 item2 w-full xl:w-auto flex-wrap">
+      <li class="relative flex justify-end mb-48 item2 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-right flex items-center">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier">
@@ -41,7 +41,8 @@
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
       </li>
-      <li class="boxwrap-half item3 w-full xl:w-auto flex-wrap">
+
+      <li class="flex relative justify-end item3 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree">
@@ -81,19 +82,11 @@ export default {
             repeatDelay: 0.3,
           }
         )
-        // gsap.from('.ease-text1', { y: 3000, duration: 1, delay: 1 })
-        // gsap.from('.ease-text2', { y: 3000, duration: 1, delay: 1 })
-        // gsap.from('.ease-text3', { y: 3000, duration: 1, delay: 1 })
-
         const hide = (element) => {
           gsap.set(element, { opacity: 0, visibility: "hidden" })
-          // gsap.set('.ease-text1', { y: 3000 })
-          // gsap.set('.ease-text2', { y: 3000 })
-          // gsap.set('.ease-text3', { y: 3000 })
         }
 
         const animated = (element) => {
-          console.log(element)
           let x = 0
 
           //依照條件設定x初始值
@@ -119,12 +112,46 @@ export default {
               overwrite: "auto",
             }
           )
+        }
+
+        const hideText = (element) => {
+          gsap.set(element, { y: 1000, opacity: 0, visibility: "hidden", delay: 2 })
+        }
+
+        const animatedText = (element) => {
+          console.log(element)
+          let y = 1000
+
+          //依照條件設定x初始值
+          if (element.classList.contains("ease-text1")) {
+            y = 1000
+          } else if (element.classList.contains("ease-text2")) {
+            y = 1000
+          } else if (element.classList.contains("ease-text3")) {
+            y = 1000
+          }
+
+          //設定元素初始值
+          element.style.transform = `translate(0px, ${y}px)`
+          gsap.fromTo(
+            element,
+            { x: 0, y: y, opacity: 0, visibility: "hidden" },
+            {
+              duration: 1,
+              delay: 1,
+              x: 0,
+              y: 0,
+              visibility: "visible",
+              opacity: "1",
+              ease: "expo",
+              overwrite: "auto"
+            }
+          )
 
           // gsap.from('.ease-text1', { y: 3000, duration: 1 })
           // gsap.from('.ease-text2', { y: 3000, duration: 1 })
           // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
-
         gsap.utils.toArray(".animation-wrapper").forEach(element => {
           if (
             element.classList.contains("from-left") ||
@@ -173,6 +200,29 @@ export default {
             //     toggleActions: "play pause resume reset"
             //   }
             // })
+          }
+        })
+
+        gsap.utils.toArray(".ease-text").forEach(element => {
+          if (
+            element.classList.contains("ease-text1") ||
+            element.classList.contains("ease-text2") ||
+            element.classList.contains("ease-text3")
+          ) {
+            hideText(element)
+            ScrollTrigger.create({
+              trigger: element,
+              onEnter: function () {
+                animatedText(element)
+              },
+              onEnterBack: function () {
+                animatedText(element)
+              },
+              onLeave: function () {
+                hideText(element)
+
+              },
+            })
           }
         })
       }
@@ -319,19 +369,6 @@ export default {
         right: -20%;
       }
     }
-  }
-
-  .boxwrap-half {
-    position: relative;
-    display: flex;
-    justify-content: end;
-    // width: 50%;
-  }
-  .boxwrap-full {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: end;
   }
 
   .box2 {
