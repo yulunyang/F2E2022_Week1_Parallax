@@ -8,10 +8,10 @@
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
           </div>
           <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
-            <p class="quote">
+            <div class="quote flex justify-center pt-3">
               <span class="animation-wrapper typing quote_typing1"></span>
               <span class="cursor">_</span>
-            </p>
+            </div>
           </div>
         </div>
         <div class="ease-text ease-text1 absolute z-50 hidden xl:block" data-aos-delay="600" data-aos="fade-up">
@@ -28,10 +28,10 @@
             <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier" data-aos-delay="200" data-aos="fade-up-left">
           </div>
           <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
-            <p class="quote">
+            <div class="quote flex justify-center pt-4">
               <span class="animation-wrapper typing quote_typing2"></span>
               <span class="cursor">_</span>
-            </p>
+            </div>
           </div>
         </div>
         <div class="ease-text ease-text2 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="100">
@@ -179,10 +179,6 @@ export default {
       .quote-outer {
           top: -5%;
           right: 2%;
-          border-style: solid dashed;
-          border-color: white;
-          border-width: 6px;
-          border-radius: 24px;
           @media (max-width: 1440px) {
             top: -8%;
             right: 2%;
@@ -192,24 +188,12 @@ export default {
             right: 15%;
           }
         .quote {
-          background-color: #ffffff;
-          min-width: 250px;
-          border-radius: 20px;
-            &::after {
-              content: '';
-              position: absolute;
-              bottom: 0;
-              left: 20%;
-              width: 0;
-              height: 0;
-              border: 40px dashed transparent;
-              border-top-color: #ffffff;
-              border-bottom: 0;
-              border-left: 0;
-              margin-left: -21px;
-              margin-bottom: -40px;
-              border-style: outset;
-            }
+          background-image: url('@/assets/img/quote1.png');
+          background-origin: center;
+          background-repeat: no-repeat;
+          background-size: 300px 100px;
+          width: 300px;
+          height: 100px;
         }
       }
       .ease-text {
@@ -221,10 +205,6 @@ export default {
       .quote-outer {
           top: -8%;
           left: -2%;
-          border-style: solid dashed;
-          border-color: white;
-          border-width: 6px;
-          border-radius: 50%;
           @media (max-width: 1440px) {
             top: -8%;
             left: -2%;
@@ -234,25 +214,12 @@ export default {
             left: 12%;
           }
         .quote {
-          background-color: #ffffff;
-          min-width: 250px;
-          border-radius: 50%;
-          padding-top: 50px;
-          padding-bottom: 50px;
-            &::after {
-              content: '';
-              position: absolute;
-              bottom: 10%;
-              right: 20%;
-              width: 0;
-              height: 0;
-              border: 51px solid transparent;
-              border-top-color: #ffffff;
-              border-bottom: 0;
-              border-right: 0;
-              margin-left: -25.5px;
-              margin-bottom: -51px;
-            }
+          background-image: url('@/assets/img/quote2.png');
+          background-origin: center;
+          background-repeat: no-repeat;
+          background-size: 300px 100px;
+          width: 300px;
+          height: 100px;
         }
       }
       .soldier {
