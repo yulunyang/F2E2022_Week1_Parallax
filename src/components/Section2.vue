@@ -112,30 +112,6 @@ export default {
           // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
 
-        // const hideText = (element) => {
-        //   gsap.set(element, { y: 1000, opacity: 0, visibility: "hidden", delay: 2 })
-        // }
-
-        // const animatedText = (element) => {
-        //   console.log(element)
-        //   let y = 1000
-
-        //   element.style.transform = `translate(0px, ${y}px)`
-        //   gsap.fromTo(
-        //     element,
-        //     { x: 0, y: y, opacity: 0, visibility: "hidden" },
-        //     {
-        //       duration: 1,
-        //       delay: 1,
-        //       x: 0,
-        //       y: 0,
-        //       visibility: "visible",
-        //       opacity: "1",
-        //       ease: "expo",
-        //       overwrite: "auto"
-        //     }
-        //   )
-        // }
         gsap.utils.toArray(".animation-wrapper").forEach(element => {
           if (
             element.classList.contains("from-left") ||
@@ -176,68 +152,8 @@ export default {
                 toggleActions: "play pause resume reset"
               },
             })
-            // gsap.to(".typing3", {
-            //   text: typing3Content,
-            //   duration: 1.5,
-            //   scrollTrigger: {
-            //     trigger: ".typing3",
-            //     toggleActions: "play pause resume reset"
-            //   }
-            // })
           }
         })
-
-        // gsap.utils.toArray(".ease-text").forEach(element => {
-        //   if (
-        //     element.classList.contains("ease-text1") ||
-        //     element.classList.contains("ease-text2") ||
-        //     element.classList.contains("ease-text3")
-        //   ) {
-        //     hideText(element)
-        //     ScrollTrigger.create({
-        //       trigger: element,
-        //       onEnter: function () {
-        //         animatedText(element)
-        //       },
-        //       onEnterBack: function () {
-        //         animatedText(element)
-        //       },
-        //       onLeave: function () {
-        //         hideText(element)
-
-        //       },
-        //     })
-        //   }
-        // })
-        // gsap.utils.toArray(".section2_item").forEach(element => {
-        //   if (element.classList.contains("item3")) {
-        //     const timeline = gsap.timeline()
-
-        //     timeline.from('.tree', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
-        //     timeline.from('.tree2_p', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
-        //     ScrollTrigger.create({
-        //       trigger: element,
-        //       onEnter: function () {
-        //         const timeline = gsap.timeline()
-
-        //         timeline.to('.tree', { y: 0, duration: 1, opacity: 1, visibility: "visible", })
-        //         timeline.to('.tree2_p', { y: 0, duration: 1, opacity: 1, visibility: "visible", delay: 4 })
-        //       },
-        //       onEnterBack: function () {
-        //         const timeline = gsap.timeline()
-
-        //         timeline.to('.tree', { y: 0, duration: 1, opacity: 1, visibility: "visible", })
-        //         timeline.to('.tree2_p', { y: 0, duration: 1, opacity: 1, visibility: "visible", delay: 4 })
-        //       },
-        //       onLeave: function () {
-        //         const timeline = gsap.timeline()
-
-        //         timeline.from('.tree', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
-        //         timeline.from('.tree2_p', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
-        //       }
-        //     })
-        //   }
-        // })
       }
 
       onMounted(()=> {
