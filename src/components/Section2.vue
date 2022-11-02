@@ -14,7 +14,7 @@
             </p>
           </div>
         </div>
-        <div class="ease-text ease-text1 absolute z-50 hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="100">
+        <div class="ease-text ease-text1 absolute z-50 hidden xl:block" data-aos-delay="600" data-aos="fade-up">
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
@@ -49,7 +49,7 @@
             <img src="@/assets/img/tree2_p.png" alt="" class="mx-auto tree2_p" data-aos-delay="300" data-aos="fade-up">
           </div>
         </div>
-        <div class="ease-text ease-text3 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="200">
+        <div class="ease-text ease-text3 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up">
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
