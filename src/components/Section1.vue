@@ -12,17 +12,17 @@
       </div>
       <div class="flex justify-center flex-col items-center mb-36">
         <div>
-          <div class="flex items-center mb-4 cursor-pointer" @click="isLogin = true">
-            <div class="mr-5">
+          <div class="flex items-center mb-4 cursor-pointer" @mouseover="mouseover(true)">
+            <div class="mr-5" >
               <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/login" class="text-white text-4xl" :class="{ 'proj-text-primary neon-effect': isLogin }" >1  LOG IN</a>
+            <a href="https://2022.thef2e.com/login" class="text-4xl" :class="{ 'text-white': !isLogin, 'proj-text-primary ': isLogin }" >1  LOG IN</a>
           </div>
-          <div class="flex items-center cursor-pointer" @click="isLogin = false">
+          <div class="flex items-center cursor-pointer" @mouseover="mouseover(false)">
             <div class="mr-5">
               <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': !isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/signup" class="text-white text-4xl" :class="{ 'proj-text-primary neon-effect': !isLogin }">2  SIGN UP</a>
+            <a href="https://2022.thef2e.com/signup" class="text-4xl" :class="{ 'text-white': isLogin, 'proj-text-primary': !isLogin }">2  SIGN UP</a>
           </div>
         </div>
       </div>
@@ -37,10 +37,13 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, onBeforeMount } from 'vue'
 export default {
   setup () {
     const isLogin = ref(true)
+    onBeforeMount(() => {
+      window.addEventListener('keydown', handleKeyDown)
+    })
     onMounted(()=> {
       setGSAP()
     })
@@ -51,8 +54,21 @@ export default {
       gsap.from(".Section1-content", { y: 1000, duration: 5, delay: 1 })
       // gsap.to(".neon-effect", { color: "rgba(255,0,0,0.5)", duration: 1, repeat: -1, repeatDelay: 7 })
     }
+
+    const handleKeyDown = (event) => {
+      event.preventDefault()
+      if (event.keyCode === 38 || event.keyCode === 40) {
+        isLogin.value = !isLogin.value
+      } else if (event.keyCode === 13) {
+        let url = isLogin.value ? 'https://2022.thef2e.com/login' : 'https://2022.thef2e.com/signup'
+        window.open(url, '_blank')
+      }
+    }
+    const mouseover = (val) => {
+      isLogin.value = val
+    }
     return {
-      setGSAP, isLogin
+      setGSAP, isLogin, handleKeyDown, mouseover
     }
   }
 }
