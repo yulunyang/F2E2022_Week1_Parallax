@@ -2,19 +2,19 @@
 <template>
   <section class="section2 overflow-hidden">
     <ul class="flex flex-wrap">
-      <li class="boxwrap-half mb-48 item1 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-half section2_item item1 mb-48 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
             <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
           </div>
-          <div class="quote-outer absolute">
+          <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
             <p class="quote">
               <span class="animation-wrapper typing quote_typing1"></span>
               <span class="cursor">_</span>
             </p>
           </div>
         </div>
-        <div class="ease-text ease-text1 absolute z-50 hidden xl:block">
+        <div class="ease-text ease-text1 absolute z-50 hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="100">
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
@@ -22,19 +22,19 @@
         </div>
       </li>
 
-      <li class="boxwrap-full mb-48 item2 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-full section2_item item2 mb-48 item2 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-right flex items-center">
-            <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier">
+            <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier" data-aos-delay="200" data-aos="fade-up-left">
           </div>
-          <div class="quote-outer absolute">
+          <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
             <p class="quote">
               <span class="animation-wrapper typing quote_typing2"></span>
               <span class="cursor">_</span>
             </p>
           </div>
         </div>
-        <div class="ease-text ease-text2 absolute hidden xl:block">
+        <div class="ease-text ease-text2 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="100">
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
@@ -42,20 +42,14 @@
         </div>
       </li>
 
-      <li class="boxwrap-half item3 w-full xl:w-auto flex-wrap">
+      <li class="boxwrap-half section2_item item3 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
-            <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree">
-            <img src="@/assets/img/tree2_p.png" alt="" class="mx-auto tree2_p">
+            <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree" data-aos-delay="200" data-aos="fade-up">
+            <img src="@/assets/img/tree2_p.png" alt="" class="mx-auto tree2_p" data-aos-delay="300" data-aos="fade-up">
           </div>
-          <!-- <div class="quote-outer absolute">
-            <p class="quote">
-              <span class="animation-wrapper typing typing3"></span>
-              <span class="cursor">_</span>
-            </p>
-          </div> -->
         </div>
-        <div class="ease-text ease-text3 absolute hidden xl:block">
+        <div class="ease-text ease-text3 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="200">
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
@@ -82,9 +76,6 @@ export default {
             repeatDelay: 0.3,
           }
         )
-        // gsap.from('.ease-text1', { y: 3000, duration: 1, delay: 1 })
-        // gsap.from('.ease-text2', { y: 3000, duration: 1, delay: 1 })
-        // gsap.from('.ease-text3', { y: 3000, duration: 1, delay: 1 })
 
         const hide = (element) => {
           gsap.set(element, { opacity: 0, visibility: "hidden" })
@@ -94,14 +85,12 @@ export default {
           console.log(element)
           let x = 0
 
-          //依照條件設定x初始值
           if (element.classList.contains("from-left")) {
             x = -100
           } else if (element.classList.contains("from-right")) {
             x = 100
           }
 
-          //設定元素初始值
           element.style.transform = `translate(${x}px, 0px)`
           gsap.fromTo(
             element,
@@ -123,44 +112,30 @@ export default {
           // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
 
-        const hideText = (element) => {
-          gsap.set(element, { y: 1000, opacity: 0, visibility: "hidden", delay: 2 })
-        }
+        // const hideText = (element) => {
+        //   gsap.set(element, { y: 1000, opacity: 0, visibility: "hidden", delay: 2 })
+        // }
 
-        const animatedText = (element) => {
-          console.log(element)
-          let y = 1000
+        // const animatedText = (element) => {
+        //   console.log(element)
+        //   let y = 1000
 
-          //依照條件設定x初始值
-          if (element.classList.contains("ease-text1")) {
-            y = 1000
-          } else if (element.classList.contains("ease-text2")) {
-            y = 1000
-          } else if (element.classList.contains("ease-text3")) {
-            y = 1000
-          }
-
-          //設定元素初始值
-          element.style.transform = `translate(0px, ${y}px)`
-          gsap.fromTo(
-            element,
-            { x: 0, y: y, opacity: 0, visibility: "hidden" },
-            {
-              duration: 1,
-              delay: 1,
-              x: 0,
-              y: 0,
-              visibility: "visible",
-              opacity: "1",
-              ease: "expo",
-              overwrite: "auto"
-            }
-          )
-
-          // gsap.from('.ease-text1', { y: 3000, duration: 1 })
-          // gsap.from('.ease-text2', { y: 3000, duration: 1 })
-          // gsap.from('.ease-text3', { y: 3000, duration: 1 })
-        }
+        //   element.style.transform = `translate(0px, ${y}px)`
+        //   gsap.fromTo(
+        //     element,
+        //     { x: 0, y: y, opacity: 0, visibility: "hidden" },
+        //     {
+        //       duration: 1,
+        //       delay: 1,
+        //       x: 0,
+        //       y: 0,
+        //       visibility: "visible",
+        //       opacity: "1",
+        //       ease: "expo",
+        //       overwrite: "auto"
+        //     }
+        //   )
+        // }
         gsap.utils.toArray(".animation-wrapper").forEach(element => {
           if (
             element.classList.contains("from-left") ||
@@ -212,28 +187,57 @@ export default {
           }
         })
 
-        gsap.utils.toArray(".ease-text").forEach(element => {
-          if (
-            element.classList.contains("ease-text1") ||
-            element.classList.contains("ease-text2") ||
-            element.classList.contains("ease-text3")
-          ) {
-            hideText(element)
-            ScrollTrigger.create({
-              trigger: element,
-              onEnter: function () {
-                animatedText(element)
-              },
-              onEnterBack: function () {
-                animatedText(element)
-              },
-              onLeave: function () {
-                hideText(element)
+        // gsap.utils.toArray(".ease-text").forEach(element => {
+        //   if (
+        //     element.classList.contains("ease-text1") ||
+        //     element.classList.contains("ease-text2") ||
+        //     element.classList.contains("ease-text3")
+        //   ) {
+        //     hideText(element)
+        //     ScrollTrigger.create({
+        //       trigger: element,
+        //       onEnter: function () {
+        //         animatedText(element)
+        //       },
+        //       onEnterBack: function () {
+        //         animatedText(element)
+        //       },
+        //       onLeave: function () {
+        //         hideText(element)
 
-              },
-            })
-          }
-        })
+        //       },
+        //     })
+        //   }
+        // })
+        // gsap.utils.toArray(".section2_item").forEach(element => {
+        //   if (element.classList.contains("item3")) {
+        //     const timeline = gsap.timeline()
+
+        //     timeline.from('.tree', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
+        //     timeline.from('.tree2_p', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
+        //     ScrollTrigger.create({
+        //       trigger: element,
+        //       onEnter: function () {
+        //         const timeline = gsap.timeline()
+
+        //         timeline.to('.tree', { y: 0, duration: 1, opacity: 1, visibility: "visible", })
+        //         timeline.to('.tree2_p', { y: 0, duration: 1, opacity: 1, visibility: "visible", delay: 4 })
+        //       },
+        //       onEnterBack: function () {
+        //         const timeline = gsap.timeline()
+
+        //         timeline.to('.tree', { y: 0, duration: 1, opacity: 1, visibility: "visible", })
+        //         timeline.to('.tree2_p', { y: 0, duration: 1, opacity: 1, visibility: "visible", delay: 4 })
+        //       },
+        //       onLeave: function () {
+        //         const timeline = gsap.timeline()
+
+        //         timeline.from('.tree', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
+        //         timeline.from('.tree2_p', { y: 1000, duration: 1, opacity: 0, visibility: "hidden" })
+        //       }
+        //     })
+        //   }
+        // })
       }
 
       onMounted(()=> {

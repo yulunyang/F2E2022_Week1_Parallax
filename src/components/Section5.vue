@@ -7,7 +7,7 @@
           <div class="absolute flag">
             <img src="@/assets/img/F1.png" alt="" class="mx-auto">
           </div>
-          <div data-aos-delay="100" data-aos="fade-right" data-aos-once="true" data-aos-offset="200" class="item-right pl-16 flex-1 flex items-end">
+          <div data-aos-delay="100" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16 flex-1 flex items-end">
             <div>
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">SIGN UP!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
@@ -40,7 +40,7 @@
             <div class="absolute flag">
               <img src="@/assets/img/F1.png" alt="" class="mx-auto">
             </div>
-            <div data-aos-delay="100" data-aos="fade-right" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
+            <div data-aos-delay="100" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
                 <p></p>
@@ -53,7 +53,7 @@
             <div class="absolute flag">
               <img src="@/assets/img/F1.png" alt="" class="mx-auto">
             </div>
-            <div data-aos-delay="100" data-aos="flip-right" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
+            <div data-aos-delay="100" data-aos="flip-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
                 <p class="text-white text-left text-base lg:text-xl">資深開發者到來 ，直播分享零阻礙！</p>
