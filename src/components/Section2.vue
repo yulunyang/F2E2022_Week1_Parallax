@@ -183,6 +183,14 @@ export default {
           border-color: white;
           border-width: 6px;
           border-radius: 24px;
+          @media (max-width: 1440px) {
+            top: -8%;
+            right: 2%;
+          }
+          @media (max-width: 768px) {
+            top: -8%;
+            right: 15%;
+          }
         .quote {
           background-color: #ffffff;
           min-width: 250px;
@@ -217,6 +225,14 @@ export default {
           border-color: white;
           border-width: 6px;
           border-radius: 50%;
+          @media (max-width: 1440px) {
+            top: -8%;
+            left: -2%;
+          }
+          @media (max-width: 768px) {
+            top: -14%;
+            left: 12%;
+          }
         .quote {
           background-color: #ffffff;
           min-width: 250px;
@@ -243,7 +259,6 @@ export default {
         position: absolute;
         bottom: 0%;
         left: 30%;
-        // transform: translateX(-50%);
       }
       .ease-text {
         top: 55%;

@@ -13,7 +13,7 @@
       <div class="absolute bottom-0 m1 w-full left-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain"></div>
       <div class="absolute bottom-0 right-0 m2"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain"></div>
       <div class="absolute bottom-0 left-0 m3"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain"></div>
-      <div class="absolute bottom-0 left-0 m4 w-full"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain"></div>
+      <div class="absolute bottom-0 left-0 m4 w-full"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain w-full"></div>
       <!-- <img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain m1 absolute bottom-0 w-full left-0">
       <img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain m2 absolute bottom-0 right-0 w-full">
       <img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain m3 absolute bottom-0 w-full left-0">

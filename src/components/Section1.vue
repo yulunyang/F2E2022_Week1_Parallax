@@ -7,7 +7,7 @@
         <div>HI- 99999</div>
         <div>Hex School</div>
       </div>
-      <div class="py-20">
+      <div class="py-20 px-16 xl:px-0">
         <img src="@/assets/img/banner_LOGO1.png" alt="" class="object-contain block mx-auto">
       </div>
       <div class="flex justify-center flex-col items-center mb-36">
