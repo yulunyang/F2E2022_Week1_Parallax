@@ -65,10 +65,10 @@ export default {
           scrub: true
         }
       })
-      // t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 0.5 })
-      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 1, duraton: 0.5 })
-      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 0.5 })
-      t2.to('.section3_bg', { backgroundColor: '#FFB3A4', opacity: 1, duraton: 0.5 })
+      // t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 1 })
+      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 1, duraton: 1 })
+      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 1 })
+      t2.to('.section3_bg', { backgroundColor: '#FFB3A4', opacity: 1, duraton: 1 })
     }
     const gsapMoutain1 = () => {
       const t3 = gsap.timeline({
