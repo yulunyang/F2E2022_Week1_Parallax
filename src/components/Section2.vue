@@ -78,10 +78,12 @@ export default {
         )
 
         const hide = (element) => {
+          // console.log('hide: ' + element)
           gsap.set(element, { opacity: 0, visibility: "hidden" })
         }
 
         const animated = (element) => {
+          // console.log('animated: ' + element)
           let x = 0
 
           if (element.classList.contains("from-left")) {
