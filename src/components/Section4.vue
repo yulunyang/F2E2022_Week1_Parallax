@@ -14,10 +14,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
+            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag1">
+            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag2">
+            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag3">
+            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
@@ -35,10 +35,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
+            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag1">
+            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag2">
+            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag3">
+            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
@@ -56,10 +56,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
+            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag1">
+            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag2">
+            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag3">
+            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
@@ -97,27 +97,27 @@ export default {
           toggleActions: "play pause resume reset",
         }
       })
-      flag1.to(".item1_flag1", {
+      flag1.to(".section4_item1_flag1", {
         duration: 0,
         opacity: 0
       }, 1)
-      flag1.from(".item1_flag2", {
+      flag1.from(".section4_item1_flag2", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag1.to(".item1_flag2", {
+      flag1.to(".section4_item1_flag2", {
         duration: 0.2,
         opacity: 0
       }, 2)
-      flag1.from(".item1_flag3", {
+      flag1.from(".section4_item1_flag3", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag1.to(".item1_flag3", {
+      flag1.to(".section4_item1_flag3", {
         duration: 0.2,
         opacity: 0
       }, 3)
-      flag1.from(".item1_flag4", {
+      flag1.from(".section4_item1_flag4", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
@@ -128,27 +128,27 @@ export default {
           toggleActions: "play pause resume reset",
         }
       })
-      flag2.to(".item2_flag1", {
+      flag2.to(".section4_item2_flag1", {
         duration: 0,
         opacity: 0
       }, 1)
-      flag2.from(".item2_flag2", {
+      flag2.from(".section4_item2_flag2", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag2.to(".item2_flag2", {
+      flag2.to(".section4_item2_flag2", {
         duration: 0.2,
         opacity: 0
       }, 2)
-      flag2.from(".item2_flag3", {
+      flag2.from(".section4_item2_flag3", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag2.to(".item2_flag3", {
+      flag2.to(".section4_item2_flag3", {
         duration: 0.2,
         opacity: 0
       }, 3)
-      flag2.from(".item2_flag4", {
+      flag2.from(".section4_item2_flag4", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
@@ -159,27 +159,27 @@ export default {
           toggleActions: "play pause resume reset",
         }
       })
-      flag3.to(".item3_flag1", {
+      flag3.to(".section4_item3_flag1", {
         duration: 0,
         opacity: 0
       }, 1)
-      flag3.from(".item3_flag2", {
+      flag3.from(".section4_item3_flag2", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag3.to(".item3_flag2", {
+      flag3.to(".section4_item3_flag2", {
         duration: 0.2,
         opacity: 0
       }, 2)
-      flag3.from(".item3_flag3", {
+      flag3.from(".section4_item3_flag3", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
-      flag3.to(".item3_flag3", {
+      flag3.to(".section4_item3_flag3", {
         duration: 0.2,
         opacity: 0
       }, 3)
-      flag3.from(".item3_flag4", {
+      flag3.from(".section4_item3_flag4", {
         duration: 0.2,
         opacity: 0,
       }, '-=0.2')
