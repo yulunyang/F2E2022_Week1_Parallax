@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="section3 overflow-hidden">
+  <section class="section3 overflow-hidden mb-48">
     <div class="relative w-full h-full">
 
       <div class="section3_bg absolute w-full h-full top-0 left-0"></div>
@@ -14,10 +14,6 @@
       <div class="absolute bottom-0 right-0 m2"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain"></div>
       <div class="absolute bottom-0 left-0 m3"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain"></div>
       <div class="absolute bottom-0 left-0 m4 w-full"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain w-full"></div>
-      <!-- <img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain m1 absolute bottom-0 w-full left-0">
-      <img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain m2 absolute bottom-0 right-0 w-full">
-      <img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain m3 absolute bottom-0 w-full left-0">
-      <img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain m4 absolute bottom-0 w-full left-0"> -->
     </div>
   </section>
 </template>
@@ -34,6 +30,7 @@ export default {
       gsapMoutain1()
       gsapMoutain2()
       gsapMoutain3()
+      gsapMoutain4()
     })
 
     onUnmounted(()=> {
@@ -50,9 +47,9 @@ export default {
       })
 
       tl.to('.section3-label', {
-        top: '20%',
+        bottom: '45%',
         left: '50%',
-        yPercent: '0',
+        xPercent: '-50',
         // duration: 10,
         position: 'absolute',
         color: '#FFC612',
@@ -68,7 +65,10 @@ export default {
           scrub: true
         }
       })
-      t2.to('.section3_bg', { backgroundColor: '#CC4F36' }).to('.section3_bg', { backgroundColor: '#FFB3A4' })
+      // t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 0.5 })
+      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 1, duraton: 0.5 })
+      t2.to('.section3_bg', { backgroundColor: '#CC4F36', opacity: 0, duraton: 0.5 })
+      t2.to('.section3_bg', { backgroundColor: '#FFB3A4', opacity: 1, duraton: 0.5 })
     }
     const gsapMoutain1 = () => {
       const t3 = gsap.timeline({
@@ -80,8 +80,8 @@ export default {
         }
       })
       t3.to('.m1', {
-        top: '100%',
-        yPercent: '-100',
+        bottom: '-30%',
+        // yPercent: '-100',
         duration: 1,
         position: 'absolute',
       })
@@ -96,9 +96,9 @@ export default {
         }
       })
       t4.to('.m2', {
-        top: '100%',
-        yPercent: '200',
-        duration: 2,
+        bottom: '-70%',
+        // yPercent: '200',
+        duration: 3,
         position: 'absolute',
       })
     }
@@ -112,18 +112,35 @@ export default {
         }
       })
       t5.to('.m3', {
-        top: '100%',
-        yPercent: '200',
+        bottom: '-70%',
+        duration: 3,
+        position: 'absolute',
+      })
+    }
+    const gsapMoutain4 = () => {
+      const t6 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".section3",
+          start: 'top top',
+          end: '1000px',
+          scrub: true
+        }
+      })
+      t6.to('.m4', {
+        bottom: '0%',
         duration: 2,
         position: 'absolute',
       })
     }
-    return {gsapLabel, gsapBG, gsapMoutain1, gsapMoutain2, gsapMoutain3}
+    return {gsapLabel, gsapBG, gsapMoutain1, gsapMoutain2, gsapMoutain3, gsapMoutain4}
   }
 }
 </script>
 
 <style scoped lang="scss">
+.section3::-webkit-scrollbar {
+  display: none;
+}
 .section3 {
   height: 140vh;
   .section3-label {

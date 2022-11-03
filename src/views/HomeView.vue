@@ -1,7 +1,7 @@
 <template>
   <div>
-    <LoadingModule v-if="isLoading" />
-    <div v-else class="bg-black">
+    <LoadingModule v-show="isLoading" />
+    <div v-show="!isLoading" class="bg-black">
       <Section1 class="z-50" />
       <Section2 class="z-50" />
       <Section3  />
@@ -50,7 +50,7 @@ export default {
       if (isLoading.value) {
         const timeout = setTimeout(() => {
           isLoading.value = false
-        }, 4000)
+        }, 2000)
         clearTimeout(timeout.value)
       }
     }

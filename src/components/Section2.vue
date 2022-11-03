@@ -45,8 +45,8 @@
       <li class="boxwrap-half section2_item item3 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left">
-            <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree" data-aos-delay="200" data-aos="fade-up">
-            <img src="@/assets/img/tree2_p.png" alt="" class="mx-auto tree2_p" data-aos-delay="300" data-aos="fade-up">
+            <img src="@/assets/img/tree2.png" alt="" class="mx-auto tree" data-aos-delay="300" data-aos="fade-up">
+            <img src="@/assets/img/tree2_p.png" alt="" class="mx-auto tree2_p" data-aos-delay="500" data-aos="fade-up">
           </div>
         </div>
         <div class="ease-text ease-text3 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up">
@@ -82,7 +82,6 @@ export default {
         }
 
         const animated = (element) => {
-          console.log(element)
           let x = 0
 
           if (element.classList.contains("from-left")) {

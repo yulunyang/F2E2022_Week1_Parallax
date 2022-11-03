@@ -1,27 +1,18 @@
 <template>
   <header class="z-50">
     <div class="container mx-auto py-2 px-2 flex justify-end">
-      <ul class="flex items-center">
-        <li>
-          <a href="" class="block px-3">
-            <img src="@/assets/img/THEF2E.png" alt="" class="object-contain block"></a>
-        </li>
-        <li>
+      <div class="flex justify-between xl:justify-end w-full items-center">
+        <div class="flex items-center">
+          <a href="" class="block px-3"><img src="@/assets/img/THEF2E.png" alt="" class="object-contain block"></a>
           <a href="" class="py-2 px-3 inline-block">關卡資訊</a>
-        </li>
-        <li>
           <a href="" class="py-2 px-3 inline-block">攻略資源</a>
-        </li>
-        <li>
           <a href="" class="py-2 px-3 inline-block">求職專區</a>
-        </li>
-        <li>
+        </div>
+        <div class="flex items-center">
           <a class="py-2 px-3 inline-flex items-center justify-center button mr-2 cursor-pointer">註冊報名</a>
-        </li>
-        <li>
           <a class="py-2 px-3 inline-flex items-center justify-center button cursor-pointer">登入</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </header>
 </template>
