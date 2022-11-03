@@ -25,10 +25,10 @@
       <li class="boxwrap-full section2_item item2 mb-48 item2 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-right flex items-center">
-            <img src="@/assets/img/tree2.png" alt="" class="mx-auto soldier" data-aos-delay="200" data-aos="fade-up-left">
+            <img src="@/assets/img/solder.png" alt="" class="mx-auto soldier" data-aos-delay="200" data-aos="fade-up-left">
           </div>
           <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
-            <div class="quote flex justify-center pt-4">
+            <div class="quote flex justify-center items-center">
               <span class="animation-wrapper typing quote_typing2"></span>
               <span class="cursor">_</span>
             </div>
@@ -217,9 +217,9 @@ export default {
           background-image: url('@/assets/img/quote2.png');
           background-origin: center;
           background-repeat: no-repeat;
-          background-size: 300px 100px;
-          width: 300px;
-          height: 100px;
+          background-size: 341px 195px;
+          width: 341px;
+          height: 195px;
         }
       }
       .soldier {

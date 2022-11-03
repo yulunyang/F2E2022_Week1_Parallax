@@ -1,18 +1,23 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="Section6 py-28">
-    <h6 class="Section6_title1 text-5xl text-white leading-relaxed text-center"></h6>
-    <h6 class="Section6_title2 text-5xl text-white leading-relaxed mb-24 text-center"></h6>
+    <div class="Section6-titles mb-18">
+      <h6 class="Section6_title1 text-5xl text-white leading-relaxed text-center"></h6>
+      <h6 class="Section6_title2 text-5xl text-white leading-relaxed text-center"></h6>
+    </div>
+
+
+    <div class="w-full mb-12"><img src="@/assets/img/cars.png" alt="" class="mx-auto object-contain w-full"></div>
 
     <div class="flex justify-center">
       <div>
         <div class="mb-24 leading-relaxed">
-          <p class="proj-text-tertiary text-left text-5xl mb-6">評審機制</p>
-          <p class="mb-6 text-white text-left text-lg leading-normal">初選：<br/>將由六角學院前端、UI 評審進行第一波篩選，<br/>並於 12/5（五）公布初選佳作名單</p>
-          <p class="text-white text-left text-lg leading-normal">初選：<br/>將由六角學院前端、UI 評審進行第一波篩選，<br/>並於 12/5（五）公布初選佳作名單</p>
+          <p class="proj-text-tertiary text-left text-4xl xl:text-5xl mb-6">評審機制</p>
+          <p class="mb-6 text-white text-left text-base xl:text-lg leading-normal">初選：<br/>將由六角學院前端、UI 評審進行第一波篩選，<br/>並於 12/5（五）公布初選佳作名單</p>
+          <p class="text-white text-left text-base xl:text-lg leading-normal">初選：<br/>將由六角學院前端、UI 評審進行第一波篩選，<br/>並於 12/5（五）公布初選佳作名單</p>
         </div>
         <div>
-          <p class="proj-text-tertiary text-left text-5xl mb-6">獎項</p>
+          <p class="proj-text-tertiary text-left text-4xl xl:text-5xl mb-6">獎項</p>
           <ul class="text-left text-lg text-white list-disc leading-normal">
 
             <li class="mb-6">
@@ -77,4 +82,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.Section6-titles {
+  min-height: 160px;
+}
 </style>

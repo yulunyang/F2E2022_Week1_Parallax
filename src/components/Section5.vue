@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="Section5 py-24">
-    <div class="p-4 pl-16 lg:pl-24 xl:pl-20 max-w-5xl mx-auto">
+    <div class="p-4 pl-24 xl:pl-20 max-w-5xl mx-auto">
       <ul class="relative">
         <li class="ml-6 timeline">
           <div class="absolute flag">

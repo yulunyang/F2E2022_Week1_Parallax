@@ -7,10 +7,10 @@
         <div>HI- 99999</div>
         <div>Hex School</div>
       </div>
-      <div class="py-20 px-16 xl:px-0">
+      <div class="py-36 xl:py-36 px-16 xl:px-0">
         <img src="@/assets/img/banner_LOGO1.png" alt="" class="object-contain block mx-auto">
       </div>
-      <div class="flex justify-center flex-col items-center mb-36">
+      <div class="flex justify-center flex-col items-center mb-48 xl:mb-36">
         <div>
           <div class="flex items-center mb-4 cursor-pointer" @mouseover="mouseover(true)">
             <div class="mr-5" >
@@ -52,7 +52,6 @@ export default {
     })
     const setGSAP = () => {
       gsap.from(".Section1-content", { y: 1000, duration: 5, delay: 1 })
-      // gsap.to(".neon-effect", { color: "rgba(255,0,0,0.5)", duration: 1, repeat: -1, repeatDelay: 7 })
     }
 
     const handleKeyDown = (event) => {
@@ -78,8 +77,6 @@ export default {
 .Section1 {
   min-height: calc(100vh - 56px);
 }
-
-body{background:#232323;}
 
 .centered{
   position:absolute;

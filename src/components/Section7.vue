@@ -31,8 +31,8 @@
         </ul>
       </div>
 
-      <div class="xl:text-4xl">
-        <a class="block button py-3 xl:py-5 cursor-pointer" href="https://2022.thef2e.com/signup">立即註冊報名!</a>
+      <div>
+        <a class="block button py-3 xl:py-5 cursor-pointer text-3xl xl:text-4xl" href="https://2022.thef2e.com/signup">立即註冊報名!</a>
       </div>
     </div>
   </section>

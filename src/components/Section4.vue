@@ -96,8 +96,8 @@ export default {
         left: 48%;
       }
       @media (max-width: 768px) {
-        top: 57%;
-        left: 47%;
+        top: 61%;
+        left: 46%;
       }
     }
   .week1 {
@@ -133,6 +133,11 @@ export default {
         left: -200%;
         z-index: -1;
         bottom: 8%;
+        @media (max-width: 768px) {
+          height: 0;
+          left: -50%;
+          z-index: -1;
+        }
       }
     }
   }
