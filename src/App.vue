@@ -20,7 +20,10 @@ export default ({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  background: black;
+  // max-width: 1920px;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 nav {

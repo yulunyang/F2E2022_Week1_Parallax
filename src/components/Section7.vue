@@ -23,7 +23,7 @@
       </div>
 
       <div class="mb-36 qa-list">
-        <ul>
+        <ul class="text-lg tracking-wide">
           <li v-for="(item, idx) in computedData" :key="idx" class="mb-8 text-left">
             <p class="question proj-text-tertiary">Q:{{ item.title }}</p>
             <p class="answer text-white">A:{{ item.text }}</p>
@@ -116,6 +116,6 @@ export default {
     color: #B82A06;
   }
   .qa-list {
-    min-height: 500px;
+    min-height: 552px;
   }
 </style>

@@ -5,7 +5,7 @@
       <li class="boxwrap-half section2_item item1 mb-48 w-full xl:w-auto flex-wrap">
         <div class="relative">
           <div class="animation-wrapper box2 from-left flex items-center">
-            <img src="@/assets/img/web_1.png" alt="" class="mx-auto">
+            <img src="@/assets/img/web1.gif" alt="" class="mx-auto">
           </div>
           <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
             <div class="quote flex justify-center pt-3">
@@ -27,7 +27,7 @@
           <div class="animation-wrapper box2 from-right flex items-center">
             <img src="@/assets/img/solder.png" alt="" class="mx-auto soldier" data-aos-delay="200" data-aos="fade-up-left">
           </div>
-          <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
+          <div class="quote-outer absolute" data-aos-delay="500" data-aos="zoom-in-up" data-aos-offset="200">
             <div class="quote flex justify-center items-center">
               <span class="animation-wrapper typing quote_typing2"></span>
               <span class="cursor">_</span>
