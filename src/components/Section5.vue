@@ -5,7 +5,10 @@
       <ul class="relative">
         <li class="ml-6 timeline">
           <div class="absolute flag">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto">
+            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 flag1">
+            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 flag2">
+            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 flag3">
+            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 flag4">
           </div>
           <div data-aos-delay="100" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16 flex-1 flex items-end">
             <div>
@@ -25,7 +28,10 @@
         </li>
         <li class="ml-6 timeline">
             <div class="absolute flag">
-              <img src="@/assets/img/F1.png" alt="" class="mx-auto">
+              <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 flag1">
+              <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 flag2">
+              <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 flag3">
+              <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 flag4">
             </div>
             <div data-aos-delay="100" data-aos="fade-right" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">START!</h6>
@@ -38,7 +44,10 @@
         </li>
         <li class="ml-6 timeline">
             <div class="absolute flag">
-              <img src="@/assets/img/F1.png" alt="" class="mx-auto">
+            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 flag1">
+            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 flag2">
+            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 flag3">
+            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 flag4">
             </div>
             <div data-aos-delay="100" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
@@ -51,7 +60,10 @@
         </li>
         <li class="ml-6">
             <div class="absolute flag">
-              <img src="@/assets/img/F1.png" alt="" class="mx-auto">
+              <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 flag1">
+              <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 flag2">
+              <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 flag3">
+              <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 flag4">
             </div>
             <div data-aos-delay="100" data-aos="flip-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
@@ -74,13 +86,53 @@ gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin
 import { onMounted, onUnmounted } from 'vue'
 export default {
   setup () {
+    const gsapInit = () => {
+      const flag = gsap.timeline({
+        // scrollTrigger: {
+        //   trigger: ".section3",
+        //   start: 'top top',
+        //   end: '1000px',
+        //   scrub: true,
+        //   markers: true
+        // }
+      })
+
+      flag.to(".flag1", {
+        duration: 1,
+        opacity: 0
+      }, 1)
+      flag.from(".flag2", {
+        duration: 1,
+        opacity: 0,
+      }, '-=1')
+      flag.to(".flag2", {
+        duration: 1,
+        opacity: 0
+      }, 2)
+      flag.from(".flag3", {
+        duration: 1,
+        opacity: 0,
+      }, '-=1')
+      flag.to(".flag3", {
+        duration: 1,
+        opacity: 0
+      }, 3)
+      flag.from(".flag4", {
+        duration: 1,
+        opacity: 0,
+      }, '-=1')
+    }
+
     onMounted(()=> {
+      gsapInit()
     })
 
     onUnmounted(()=> {
     })
 
-    return {}
+    return {
+      gsapInit
+    }
   }
 }
 </script>
@@ -102,6 +154,14 @@ export default {
     }
   }
   .flag {
+    width: 141px;
+    height: 299px;
+    // background-image: url('@/assets/img/F1.png');
+    // background-origin: center;
+    // background-repeat: no-repeat;
+    // background-size: 141px 299px;
+
+
     left: -90px;
       @media (max-width: 1440px) {
       }

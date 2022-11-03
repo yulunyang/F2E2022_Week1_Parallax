@@ -80,7 +80,7 @@ export default {
         }
       })
       t3.to('.m1', {
-        bottom: '-30%',
+        bottom: '-20%',
         // yPercent: '-100',
         duration: 1,
         position: 'absolute',

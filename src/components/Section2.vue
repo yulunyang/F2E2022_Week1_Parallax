@@ -105,10 +105,6 @@ export default {
               overwrite: "auto",
             }
           )
-
-          // gsap.from('.ease-text1', { y: 3000, duration: 1 })
-          // gsap.from('.ease-text2', { y: 3000, duration: 1 })
-          // gsap.from('.ease-text3', { y: 3000, duration: 1 })
         }
 
         gsap.utils.toArray(".animation-wrapper").forEach(element => {
