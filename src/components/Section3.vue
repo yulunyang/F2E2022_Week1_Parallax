@@ -40,7 +40,6 @@ export default {
     const gsapShow = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
-          markers: true,
           trigger: ".section3",
           start: 'top 0%',
           end: 'top 1%',
