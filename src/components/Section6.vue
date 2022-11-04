@@ -46,15 +46,13 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted } from 'vue'
 export default {
   setup () {
     onMounted(()=> {
       setGSAP()
     })
 
-    onUnmounted(()=> {
-    })
     const setGSAP = () => {
       gsap.to(".Section6_title1", {
         text: "區區修煉已經無法滿足了嗎？",
