@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
-          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week1">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week1" target="_blank">查看關卡細節</a>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
-          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week2">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week2" target="_blank">查看關卡細節</a>
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
-          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week3">查看關卡細節</a>
+          <a class="button py-3 cursor-pointer px-6" href="https://2022.thef2e.com/news/week3" target="_blank">查看關卡細節</a>
         </div>
       </div>
     </div>

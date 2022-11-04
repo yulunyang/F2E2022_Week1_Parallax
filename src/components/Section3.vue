@@ -101,7 +101,7 @@ export default {
         // css: { borderColor:" #FFC612"}
       })
       tl.to('.section3-label', {
-        bottom: '50%',
+        bottom: '4%',
         left: '50%',
         xPercent: '-50',
         yPercent: '-50',
@@ -111,7 +111,7 @@ export default {
         // css: { borderColor:" #FFC612"}
       })
       tl.to('.section3-label', {
-        bottom: '50%',
+        bottom: '40%',
         left: '50%',
         xPercent: '-50',
         yPercent: '-50',
