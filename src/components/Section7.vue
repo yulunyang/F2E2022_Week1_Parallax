@@ -42,7 +42,7 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, ref, reactive, computed } from 'vue'
+import { ref, reactive, computed } from 'vue'
 export default {
   setup () {
     const selectedIdx = ref(0)
