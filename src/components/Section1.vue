@@ -37,7 +37,7 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted, ref, onBeforeMount } from 'vue'
+import { onMounted, ref, onBeforeMount } from 'vue'
 export default {
   setup () {
     const isLogin = ref(true)
@@ -48,8 +48,6 @@ export default {
       setGSAP()
     })
 
-    onUnmounted(()=> {
-    })
     const setGSAP = () => {
       gsap.from(".Section1-content", { y: 1000, duration: 5, delay: 1 })
     }
