@@ -211,6 +211,7 @@ export default {
   .section3-label-show {
     p {
       border-color: white !important;
+      transition: .3s;
     }
   }
   .section3-mountain {
