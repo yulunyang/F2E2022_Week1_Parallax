@@ -42,7 +42,7 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted, ref, reactive, computed } from 'vue'
+import { onMounted, ref, reactive, computed } from 'vue'
 export default {
   setup () {
     const selectedIdx = ref(0)
@@ -87,12 +87,6 @@ export default {
       { title: '請問除了前端開發、UI 設計外，還能做其他加值應用嗎？例如後端動態應用整合？', text: '可以的，只要能透過網頁瀏覽器操控您的服務，並有使用到 TDX API 的任何一個 API，您可以依照本次主題「全台公車動態時刻查詢應用服務」做最大的加值整合應用，甚至搭配後端應用，整合多個外部 API 也是可以的。' },
       { title: '團體組的 UI 設計稿，可以讓『個人組-前端工程師』組別採用嗎？', text: '不能，預設是不能讓『個人組-前端工程師』採用。' }
     ])
-    onMounted(()=> {
-    })
-
-    onUnmounted(()=> {
-    })
-
 
     return {
       selectedIdx,
