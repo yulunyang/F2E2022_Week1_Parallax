@@ -83,7 +83,7 @@
 // @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted } from 'vue'
 export default {
   setup () {
     const gsapInit = () => {
@@ -226,9 +226,6 @@ export default {
 
     onMounted(()=> {
       gsapInit()
-    })
-
-    onUnmounted(()=> {
     })
 
     return {
