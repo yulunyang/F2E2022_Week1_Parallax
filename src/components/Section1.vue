@@ -2,27 +2,27 @@
 <template>
   <section class="Section1 py-6 px-4 overflow-hidden">
     <div class="Section1-content proj-container mx-auto">
-      <div class="flex justify-between text-white text-2xl lg:text-4xl">
+      <div class="flex justify-between text-white text-2xl xl:text-3xl">
         <div>I-    00</div>
         <div>HI- 99999</div>
         <div>Hex School</div>
       </div>
-      <div class="py-36 xl:py-36 px-16 xl:px-0">
+      <div class="py-28 xl:py-36 px-16 xl:px-0">
         <img src="@/assets/img/banner_LOGO1.png" alt="" class="object-contain block mx-auto">
       </div>
       <div class="flex justify-center flex-col items-center mb-48 xl:mb-36">
-        <div>
-          <div class="flex items-center mb-4 cursor-pointer" @mouseover="mouseover(true)">
+        <div class="text-3xl xl:text-5xl">
+          <div class="flex items-center mb-5 cursor-pointer" @mouseover="mouseover(true)">
             <div class="mr-5" >
               <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/login" class="text-4xl" :class="{ 'text-white': !isLogin, 'proj-text-primary ': isLogin }" >1  LOG IN</a>
+            <a href="https://2022.thef2e.com/login" :class="{ 'text-white': !isLogin, 'proj-text-primary ': isLogin }" >1  LOG IN</a>
           </div>
           <div class="flex items-center cursor-pointer" @mouseover="mouseover(false)">
             <div class="mr-5">
               <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': !isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/signup" class="text-4xl" :class="{ 'text-white': isLogin, 'proj-text-primary': !isLogin }">2  SIGN UP</a>
+            <a href="https://2022.thef2e.com/signup" :class="{ 'text-white': isLogin, 'proj-text-primary': !isLogin }">2  SIGN UP</a>
           </div>
         </div>
       </div>

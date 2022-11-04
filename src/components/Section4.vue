@@ -204,7 +204,7 @@ export default {
     .car {
       width: 164px;
       height: 66px;
-      top: 58%;
+      top: 60%;
       left: 48%;
       @media (max-width: 1440px) {
         top: 57%;
@@ -343,7 +343,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100%;
   }
 

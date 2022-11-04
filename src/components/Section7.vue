@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="Section7 py-28">
-    <div class="proj-bg-primary text-center text-4xl py-6">
+    <div class="proj-bg-primary text-center text-2xl xl:text-4xl py-6">
       <h6 class="text-white">常見問答</h6>
     </div>
     <div class="proj-container mx-auto px-6 py-12">

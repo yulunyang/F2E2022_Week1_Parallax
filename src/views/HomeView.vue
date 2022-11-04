@@ -1,7 +1,7 @@
 <template>
   <div id="main">
-    <LoadingModule v-show="isLoading" />
-    <div v-show="!isLoading" class="bg-black">
+    <LoadingModule v-if="isLoading" />
+    <div v-if="!isLoading" class="bg-black">
       <Section1 class="z-50" />
       <Section2 class="z-50" />
       <Section3 class="z-0" />

@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="Section6 py-28">
-    <div class="Section6-titles mb-18">
-      <h6 class="Section6_title1 text-5xl text-white leading-relaxed text-center"></h6>
-      <h6 class="Section6_title2 text-5xl text-white leading-relaxed text-center"></h6>
+    <div class="Section6-titles xl:mb-4">
+      <h6 class="Section6_title1 text-4xl xl:text-5xl text-white leading-relaxed text-center mb-5"></h6>
+      <h6 class="Section6_title2 text-4xl xl:text-5xl text-white leading-relaxed text-center"></h6>
     </div>
 
 
-    <div class="w-full mb-12"><img src="@/assets/img/cars.png" alt="" class="mx-auto object-contain w-full"></div>
+    <div class="w-full mb-36"><img src="@/assets/img/cars.png" alt="" class="mx-auto object-contain w-full"></div>
 
     <div class="flex justify-center">
       <div>
@@ -84,5 +84,10 @@ export default {
 <style scoped lang="scss">
 .Section6-titles {
   min-height: 160px;
+}
+.Section6 {
+  // ul {
+  //   list-style-type: square;
+  // }
 }
 </style>

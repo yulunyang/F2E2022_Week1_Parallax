@@ -1,7 +1,7 @@
 <template>
   <div class="loading w-full h-screen fixed left-0 top-0 bg-black">
     <div class="loading-text absolute text-white text-4xl">
-      <p class="typing mb-6"></p>
+      <p class="typing-loading mb-6"></p>
       <img src="@/assets/img/car.gif" class="car" />
     </div>
   </div>
@@ -19,11 +19,11 @@ export default {
     onUnmounted(() => {
     })
     const setGSAP = () => {
-      gsap.to(".typing", {
+      gsap.to(".typing-loading", {
         text: "Loading...",
         duration: 1.5,
         scrollTrigger: {
-          trigger: ".typing",
+          trigger: ".typing-loading",
           toggleActions: "play pause resume reset",
         },
         repeat: -1
@@ -43,7 +43,7 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    .typing {
+    .typing-loading {
       min-height: 32px;
     }
     .car {

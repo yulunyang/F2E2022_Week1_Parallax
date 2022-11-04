@@ -1,6 +1,8 @@
 <template>
-  <HeaderSection />
-  <router-view />
+  <div id="app">
+    <HeaderSection />
+    <router-view />
+  </div>
 </template>
 <script>
 import HeaderSection from '@/components/modules/headerSection.vue'
@@ -17,13 +19,11 @@ export default ({
 <style lang="scss">
 #app {
   font-family: 'cubic-11';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background: black;
-  // max-width: 1920px;
-  // margin-left: auto;
-  // margin-right: auto;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 nav {

@@ -3,14 +3,14 @@
   <section class="Section5 py-24">
     <div class="p-4 pl-24 xl:pl-20 max-w-5xl mx-auto">
       <ul class="relative">
-        <li class="ml-6" id="section5_item1">
+        <li class="ml-6 mt-12" id="section5_item1">
           <div class="absolute flag">
             <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag1">
             <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag2">
             <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
             <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
           </div>
-          <div data-aos-delay="3000" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16 flex-1 flex items-end">
+          <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex items-end">
             <div>
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">SIGN UP!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
@@ -33,7 +33,7 @@
             <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag3">
             <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
           </div>
-          <div data-aos-delay="3000" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
+          <div ata-aos-delay="1000" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom"  class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">START!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
@@ -49,7 +49,7 @@
           <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag3">
           <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
           </div>
-          <div data-aos-delay="3000" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
+          <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
@@ -65,7 +65,7 @@
             <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag3">
             <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag4">
           </div>
-          <div data-aos-delay="3000" data-aos="fade-left" data-aos-once="true" data-aos-offset="200" class="item-right pl-16">
+          <div data-aos-delay="1000" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p class="text-white text-left text-base lg:text-xl">資深開發者到來 ，直播分享零阻礙！</p>
@@ -90,126 +90,138 @@ export default {
       const flag1 = gsap.timeline({
         scrollTrigger: {
           trigger: "#section5_item1",
+          start: 'top 55%',
+          end: 'top 48%',
+          scrub: true,
           toggleActions: "play pause resume reset",
         }
       })
       flag1.to(".item1_flag1", {
-        duration: 0,
+        duration: 0.1,
         opacity: 0
       }, 1)
       flag1.from(".item1_flag2", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
       flag1.to(".item1_flag2", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0
       }, 2)
       flag1.from(".item1_flag3", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
       flag1.to(".item1_flag3", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0
       }, 3)
       flag1.from(".item1_flag4", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
 
       const flag2 = gsap.timeline({
         scrollTrigger: {
           trigger: "#section5_item2",
+          start: 'top 55%',
+          end: 'top 48%',
+          scrub: true,
           toggleActions: "play pause resume reset",
         }
       })
       flag2.to(".item2_flag1", {
-        duration: 0,
+        duration: 0.1,
         opacity: 0
       }, 1)
       flag2.from(".item2_flag2", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
       flag2.to(".item2_flag2", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0
       }, 2)
       flag2.from(".item2_flag3", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
       flag2.to(".item2_flag3", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0
       }, 3)
       flag2.from(".item2_flag4", {
-        duration: 0.2,
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
 
       const flag3 = gsap.timeline({
         scrollTrigger: {
           trigger: "#section5_item3",
+          start: 'top 55%',
+          end: 'top 48%',
+          scrub: true,
           toggleActions: "play pause resume reset",
         }
       })
-      flag3.to(".item4_flag1", {
-        duration: 0,
+      flag3.to(".item3_flag1", {
+        duration: 0.1,
         opacity: 0
       }, 1)
-      flag3.from(".item4_flag2", {
-        duration: 0.2,
+      flag3.from(".item3_flag2", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
-      flag3.to(".item4_flag2", {
-        duration: 0.2,
+      }, '-=0.1')
+      flag3.to(".item3_flag2", {
+        duration: 0.1,
         opacity: 0
       }, 2)
-      flag3.from(".item4_flag3", {
-        duration: 0.2,
+      flag3.from(".item3_flag3", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
-      flag3.to(".item4_flag3", {
-        duration: 0.2,
+      }, '-=0.1')
+      flag3.to(".item3_flag3", {
+        duration: 0.1,
         opacity: 0
       }, 3)
-      flag3.from(".item4_flag4", {
-        duration: 0.2,
+      flag3.from(".item3_flag4", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
 
       const flag4 = gsap.timeline({
         scrollTrigger: {
           trigger: "#section5_item4",
+          start: 'top 55%',
+          end: 'top 48%',
+          scrub: true,
           toggleActions: "play pause resume reset",
         }
       })
-      flag4.to(".item3_flag1", {
-        duration: 0,
+      flag4.to(".item4_flag1", {
+        duration: 0.1,
         opacity: 0
       }, 1)
-      flag4.from(".item3_flag2", {
-        duration: 0.2,
+      flag4.from(".item4_flag2", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
-      flag4.to(".item3_flag2", {
-        duration: 0.2,
+      }, '-=0.1')
+      flag4.to(".item4_flag2", {
+        duration: 0.1,
         opacity: 0
       }, 2)
-      flag4.from(".item3_flag3", {
-        duration: 0.2,
+      flag4.from(".item4_flag3", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
-      flag4.to(".item3_flag3", {
-        duration: 0.2,
+      }, '-=0.1')
+      flag4.to(".item4_flag3", {
+        duration: 0.1,
         opacity: 0
       }, 3)
-      flag4.from(".item3_flag4", {
-        duration: 0.2,
+      flag4.from(".item4_flag4", {
+        duration: 0.1,
         opacity: 0,
-      }, '-=0.2')
+      }, '-=0.1')
     }
 
     onMounted(()=> {
