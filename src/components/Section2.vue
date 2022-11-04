@@ -125,8 +125,7 @@ export default {
               },
               onLeave: function () {
                 hide(element)
-
-              },
+              }
             })
           } else if(element.classList.contains("typing")) {
             const typing1Content = "I’m cool !"

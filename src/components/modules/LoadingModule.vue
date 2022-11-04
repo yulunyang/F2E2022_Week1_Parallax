@@ -1,8 +1,8 @@
 <template>
   <div class="loading w-full h-screen fixed left-0 top-0 bg-black">
-    <div class="loading-text absolute text-white text-2xl">
-      <p class="typing mb-3"></p>
-      <img src="@/assets/img/car.png" />
+    <div class="loading-text absolute text-white text-4xl">
+      <p class="typing mb-6"></p>
+      <img src="@/assets/img/car.gif" class="car" />
     </div>
   </div>
 </template>
@@ -45,6 +45,10 @@ export default {
     transform: translate(-50%, -50%);
     .typing {
       min-height: 32px;
+    }
+    .car {
+      width: 164px;
+      height: 66px;
     }
   }
 }

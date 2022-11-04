@@ -4,7 +4,7 @@
     <div v-show="!isLoading" class="bg-black">
       <Section1 class="z-50" />
       <Section2 class="z-50" />
-      <Section3  />
+      <Section3 class="z-0" />
       <Section4 class="z-50" />
       <Section5 class="z-50" />
       <Section6 class="z-50" />

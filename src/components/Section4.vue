@@ -2,7 +2,7 @@
 <template>
   <section class="section4 overflow-hidden">
     <div class="fixed car z-50 top-0 car">
-      <img src="@/assets/img/car.png" class="block" />
+      <img src="@/assets/img/car.gif" class="block" />
     </div>
     <div class="gate gate-left gate-left-1 z-20 week1 overflow-hidden" id="section4_item1">
       <div class="mx-auto">
@@ -73,7 +73,7 @@
 <script>
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted } from 'vue'
 export default {
   setup () {
     const gsapInit = () => {
@@ -190,9 +190,6 @@ export default {
       gsapFlag()
     })
 
-    onUnmounted(()=> {
-    })
-
     return {gsapInit, gsapFlag}
   }
 }
@@ -205,6 +202,8 @@ export default {
     height: 100vh;
     overflow: hidden;
     .car {
+      width: 164px;
+      height: 66px;
       top: 58%;
       left: 48%;
       @media (max-width: 1440px) {
