@@ -24,3 +24,4 @@ Vue Cli
 AOS
 GSAP
 animate.css
+Tailwind
