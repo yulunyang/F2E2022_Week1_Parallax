@@ -11,18 +11,18 @@
         <img src="@/assets/img/banner_LOGO1.png" alt="" class="object-contain block mx-auto">
       </div>
       <div class="flex justify-center flex-col items-center mb-48 xl:mb-36">
-        <div class="text-3xl xl:text-5xl">
+        <div class="text-3xl xl:text-4xl">
           <div class="flex items-center mb-5 cursor-pointer" @mouseover="mouseover(true)">
             <div class="mr-5" >
-              <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': isLogin }">
+              <img src="@/assets/img/hammer.gif" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/login" :class="{ 'text-white': !isLogin, 'proj-text-primary ': isLogin }" >1  LOG IN</a>
+            <a href="https://2022.thef2e.com/login" :class="{ 'text-white': !isLogin, 'proj-text-primary neon-effect': isLogin }" >1  LOG IN</a>
           </div>
           <div class="flex items-center cursor-pointer" @mouseover="mouseover(false)">
             <div class="mr-5">
-              <img src="@/assets/img/hammer.png" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': !isLogin }">
+              <img src="@/assets/img/hammer.gif" alt="" class="hammer object-contain block mx-auto opacity-0" :class="{ 'opacity-100': !isLogin }">
             </div>
-            <a href="https://2022.thef2e.com/signup" :class="{ 'text-white': isLogin, 'proj-text-primary': !isLogin }">2  SIGN UP</a>
+            <a href="https://2022.thef2e.com/signup" :class="{ 'text-white': isLogin, 'proj-text-primary neon-effect': !isLogin }">2  SIGN UP</a>
           </div>
         </div>
       </div>
@@ -87,23 +87,11 @@ export default {
 
 .neon-effect {
   color:#fff;
-  letter-spacing:2px;
-}
-
-
-.neon-effect {
+  letter-spacing: 2px;
   animation: neon-shine 8s infinite;
   animation-delay: 5s;
 }
 
-// .neon-effect:nth-of-type(3){
-//   text-shadow:
-//     0 0 5px rgba(255, 65, 65, 1),
-//     0 0 10px rgba(255, 65, 65, 1),
-//     0 0 20px rgba(255, 65, 65, 1),
-//     0 0 40px rgba(255, 65, 65, 1);
-//   animation:neon-shine 2s linear infinite;
-// }
 @keyframes neon-shine{
 
     0%{
@@ -122,5 +110,10 @@ export default {
       color: white;
     }
 
+}
+
+.hammer {
+  width: 86px;
+  height: 53px;
 }
 </style>
