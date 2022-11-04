@@ -57,7 +57,10 @@ export default {
       })
       tl.to('.section3-label', {
         opacity: 1,
-        display: 'block'
+        display: 'block',
+        bottom: '0%',
+        duration: 1,
+        position: 'fixed'
       })
 
       const t2 = gsap.timeline({
