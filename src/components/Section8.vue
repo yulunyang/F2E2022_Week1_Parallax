@@ -43,7 +43,7 @@
         <div class="w-1/3 p-5">
           <div class="outer">
             <div class="inner mx-auto border-0 absolute w-full h-full flex items-center">
-              <!-- <img src="@/assets/img/sponsor/blockstudio_logo.png" alt="" class="object-contain block mx-auto"> -->
+              <img src="@/assets/img/sponsor/miro.svg" alt="" class="object-contain block mx-auto">
             </div>
           </div>
         </div>
