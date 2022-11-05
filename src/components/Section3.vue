@@ -43,7 +43,7 @@ export default {
         } else {
           scrolled.value = false
         }
-        if (window.pageYOffset > 7880) {
+        if (window.pageYOffset > 6800) {
           isHide.value = true
         } else {
           isHide.value = false
