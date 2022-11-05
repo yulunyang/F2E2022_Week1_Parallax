@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="main" class="m-0 p-0">
     <HeaderSection />
     <router-view />
   </div>
@@ -17,13 +17,14 @@ export default ({
 </script>
 
 <style lang="scss">
-#app {
+#main {
   font-family: 'cubic-11';
   text-align: center;
   background: black;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 }
 
 nav {

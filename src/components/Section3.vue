@@ -8,9 +8,9 @@
 
       <div class="section3-mountain left-0 w-full bottom-0 absolute">
         <div class="m1 w-full left-0 absolute bottom-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m2 w-full right-0 absolute bottom-0"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m3 w-full left-0 absolute bottom-0"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m4 left-0 w-full absolute bottom-0"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain w-full"></div>
+        <div class="m2 right-0 absolute bottom-0"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain w-full"></div>
+        <div class="m3 left-0 absolute bottom-0"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain w-full"></div>
+        <div class="m4 w-full left-0 absolute bottom-0"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain w-full"></div>
       </div>
     </div>
   </section>
@@ -37,15 +37,28 @@ export default {
     })
     const handleScroll = () => {
       console.log(window.pageYOffset)
-      if (window.pageYOffset > 3327 && window.pageYOffset < 7796) {
-        scrolled.value = true
+      if (window.innerWidth >= 1440) {
+        if (window.pageYOffset > 3327 && window.pageYOffset < 7796) {
+          scrolled.value = true
+        } else {
+          scrolled.value = false
+        }
+        if (window.pageYOffset > 7880) {
+          isHide.value = true
+        } else {
+          isHide.value = false
+        }
       } else {
-        scrolled.value = false
-      }
-      if (window.pageYOffset > 7880) {
-        isHide.value = true
-      } else {
-        isHide.value = false
+        if (window.pageYOffset > 3512 && window.pageYOffset < 6800) {
+          scrolled.value = true
+        } else {
+          scrolled.value = false
+        }
+        if (window.pageYOffset > 6800) {
+          isHide.value = true
+        } else {
+          isHide.value = false
+        }
       }
     }
     const gsapLabel = () => {
@@ -74,7 +87,7 @@ export default {
         bottom: '40%',
         left: '50%',
         xPercent: '-50',
-        yPercent: '-50',
+        // yPercent: '-50',
         position: 'fixed',
         color: '#ffffff',
         borderColor: "white",
@@ -148,6 +161,7 @@ export default {
 <style scoped lang="scss">
 
 .section3 {
+  width: 100vw;
   height: 400vh;
   background: -webkit-linear-gradient(-180deg, rgb(0, 0, 0), rgb(204, 79, 54), rgb(255, 179, 164));
   background: linear-gradient(-180deg, rgb(0, 0, 0), rgb(204, 79, 54), rgb(255, 179, 164));
@@ -162,44 +176,59 @@ export default {
     .section3-label {
       left: 50%;
       transform: translateX(-50%);
-      // transition: .3s;
-      // p {
-        border-color: #FFC612;
-        color: #FFC612;
-      // }
+      border-color: #FFC612;
+      color: #FFC612;
     }
     .section3-label-note {
       opacity: 0;
       left: 50%;
       transform: translateX(-50%);
     }
-    // .section3-label-show {
-    //   p {
-    //     border-color: white !important;
-    //     transition: .3s;
-    //   }
-    // }
   .section3-mountain {
-    transition: 0.3s;
-    // bottom: -100%;
     max-width: 100vw;
     width: 100%;
     .m1 {
-      // position: fixed;
     }
     .m2 {
-      max-width: 1200px;
-      // position: fixed;
+        @media (max-width: 1448px) {
+          max-width: 1440px;
+        }
+        @media (max-width: 768px) {
+          max-width: 768px;
+        }
+      img {
+        max-width: 1200px;
+        @media (max-width: 1441px) {
+          max-width: 1440px;
+        }
+        @media (max-width: 769px) {
+          max-width: 768px;
+        }
+      }
     }
     .m3 {
-      max-width: 1600px;
-      // position: fixed;
+        max-width: 100vw;
+      // @media (max-width: 1441px) {
+      //   max-width: 1440px;
+      // }
+      // @media (max-width: 769px) {
+      //   max-width: 768px;
+      // }
+      // img {
+      //   max-width: 1600px;
+      //   @media (max-width: 1441px) {
+      //     max-width: 1440px;
+      //   }
+      //   @media (max-width: 769px) {
+      //     max-width: 768px;
+      //   }
+      // }
     }
   }
 }
   .sticky {
     position: fixed;
-    width: 100%;
+    width: 100vw;
   }
 }
 </style>
