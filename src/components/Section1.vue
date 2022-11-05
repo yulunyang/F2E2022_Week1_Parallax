@@ -49,7 +49,7 @@ export default {
     })
 
     const setGSAP = () => {
-      gsap.from(".Section1-content", { y: 1000, duration: 5, delay: 1 })
+      gsap.from(".Section1-content", { y: 1000, duration: 5, delay: 2 })
     }
 
     const handleKeyDown = (event) => {

@@ -1,7 +1,7 @@
 <template>
   <div id="main">
-    <LoadingModule v-if="isLoading" />
-    <div v-if="!isLoading" class="bg-black">
+    <LoadingModule v-if="isLoading" class="z-50 overflow-hidden" />
+    <div class="bg-black">
       <Section1 class="z-50" />
       <Section2 class="z-50" />
       <Section3 class="z-0" />
@@ -39,7 +39,7 @@ export default {
     Section8
   },
   setup () {
-    const isLoading = ref(false)
+    const isLoading = ref(true)
     const timer = ref(null)
 
     onMounted(() => {
