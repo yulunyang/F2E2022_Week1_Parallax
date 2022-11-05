@@ -5,10 +5,10 @@
       <ul class="relative">
         <li class="ml-6 mt-12" id="section5_item1">
           <div class="absolute flag">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
           </div>
           <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex items-end">
             <div>
@@ -28,10 +28,10 @@
         </li>
         <li class="ml-6" id="section5_item2">
           <div class="absolute flag">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
           </div>
           <div ata-aos-delay="500" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom"  class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">START!</h6>
@@ -44,10 +44,10 @@
         </li>
         <li class="ml-6" id="section5_item3">
           <div class="absolute flag">
-          <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag1">
-          <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag2">
-          <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag3">
-          <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
+          <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag1">
+          <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag2">
+          <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag3">
+          <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
           </div>
           <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
@@ -60,10 +60,10 @@
         </li>
         <li class="ml-6" id="section5_item4">
           <div class="absolute flag">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag4">
           </div>
           <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>

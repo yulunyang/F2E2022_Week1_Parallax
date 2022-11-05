@@ -14,10 +14,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item1_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
@@ -35,10 +35,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item2_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
@@ -56,10 +56,10 @@
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
-            <img src="@/assets/img/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag1">
-            <img src="@/assets/img/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag2">
-            <img src="@/assets/img/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag3">
-            <img src="@/assets/img/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag4">
+            <img src="@/assets/img/flag/F1.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag1">
+            <img src="@/assets/img/flag/F2.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag2">
+            <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag3">
+            <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 section4_item3_flag4">
           </div>
         </div>
         <div class="xl:text-4xl mt-10">
