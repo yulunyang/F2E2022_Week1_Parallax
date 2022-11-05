@@ -1,12 +1,14 @@
 {
   "name": "week1_parallax",
+  "homepage": "https://yulunyang.github.io/F2E_Week1_Parallax",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && node ./deploy/ghpages.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
