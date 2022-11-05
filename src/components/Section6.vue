@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="Section6 py-28">
-    <div class="Section6-titles xl:mb-4">
+    <div class="Section6-titles">
       <h6 class="Section6_title1 text-4xl xl:text-5xl text-white leading-relaxed text-center mb-5"></h6>
       <h6 class="Section6_title2 text-4xl xl:text-5xl text-white leading-relaxed text-center"></h6>
     </div>
