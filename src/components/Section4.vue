@@ -185,12 +185,35 @@ export default {
       }, '-=0.2')
     }
 
+    const gsapLayer = () => {
+      // const cards = document.querySelectorAll(".gate-left");
+      // const height = 500;
+
+      // const timeline = gsap.timeline({
+      //   scrollTrigger: {
+      //     trigger: ".section4",
+      //     pin: true,
+      //     markers: true,
+      //     scrub: 1,
+      //     start: "left-=10% center",
+      //     end: "left right"
+      //   }
+      // });
+
+      // timeline.from(".gate-left", {
+      //   y: (index) => height * (cards.length - (index + 1)),
+      //   duration: (index) => 0.6 / (index + 1),
+      //   ease: "none",
+      //   stagger: (index) => 0.3 * (index),
+      // })
+    }
+
     onMounted(()=> {
       gsapInit()
       gsapFlag()
     })
 
-    return {gsapInit, gsapFlag}
+    return {gsapInit, gsapFlag, gsapLayer}
   }
 }
 </script>

@@ -10,7 +10,7 @@
             <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
           </div>
-          <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex items-end">
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex items-end">
             <div>
               <h6 class="text-5xl proj-text-tertiary text-left mb-3">SIGN UP!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
@@ -33,7 +33,7 @@
             <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag3">
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
           </div>
-          <div ata-aos-delay="500" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom"  class="item-right pl-16">
+          <div ata-aos-delay="200" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom"  class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">START!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
@@ -49,7 +49,7 @@
           <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag3">
           <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
           </div>
-          <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
@@ -65,7 +65,7 @@
             <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag3">
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag4">
           </div>
-          <div data-aos-delay="500" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
             <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p class="text-white text-left text-base lg:text-xl">資深開發者到來 ，直播分享零阻礙！</p>

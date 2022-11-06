@@ -7,10 +7,10 @@
       <p class="section3-label-note text-2xl whitespace-nowrap absolute bottom-0 text-white"> UI、前端接力合作，一同產出完整作品。</p>
 
       <div class="section3-mountain left-0 w-full bottom-0 absolute">
-        <div class="m1 w-full left-0 absolute bottom-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m2 right-0 absolute bottom-0"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m3 left-0 absolute bottom-0"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain w-full"></div>
-        <div class="m4 w-full left-0 absolute bottom-0"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain w-full"></div>
+        <div class="m1 w-full left-0 absolute bottom-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain"></div>
+        <div class="m2 right-0 absolute bottom-0"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain"></div>
+        <div class="m3 left-0 absolute bottom-0"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain"></div>
+        <div class="m4 w-full left-0 absolute bottom-0"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain"></div>
       </div>
     </div>
   </section>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear } from 'gsap/all'
-gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear )
+import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear, Cubic } from 'gsap/all'
+gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear, Cubic )
 import { onMounted, onUnmounted, ref } from 'vue'
 export default {
   setup () {
@@ -36,9 +36,9 @@ export default {
       window.removeEventListener("scroll", handleScroll)
     })
     const handleScroll = () => {
-      console.log(window.pageYOffset)
+      // console.log(window.pageYOffset)
       if (window.innerWidth >= 1440) {
-        if (window.pageYOffset > 3327 && window.pageYOffset < 7796) {
+        if (window.pageYOffset > 3400 && window.pageYOffset < 7796) {
           scrolled.value = true
         } else {
           scrolled.value = false
@@ -65,14 +65,14 @@ export default {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".section3",
-          start: 'top 100vh',
+          start: 'top 0%',
           end: 'bottom 90%',
           scrub: true
         },
       })
 
       tl.to('.section3-label', {
-        bottom: '0%',
+        bottom: '30%',
         left: '50%',
         xPercent: '-50',
         yPercent: '-50',
@@ -91,7 +91,8 @@ export default {
         position: 'fixed',
         color: '#ffffff',
         borderColor: "white",
-        fontSize: '4.5rem'
+        fontSize: '4.5rem',
+        ease: Cubic.out
       })
       tl.to('.section3-label-note', {
         opacity: 0,
@@ -169,10 +170,7 @@ export default {
     transition: .3s;
     top: 0;
     width: 100%;
-    // position: absolute;
     left: 0%;
-    // bottom: 0px;
-    // position: fixed;
     .section3-label {
       left: 50%;
       transform: translateX(-50%);
@@ -185,11 +183,13 @@ export default {
       transform: translateX(-50%);
     }
   .section3-mountain {
-    max-width: 100vw;
+    max-width: 1920px;
     width: 100%;
     .m1 {
+      max-width: 1920px;
     }
     .m2 {
+      max-width: 1920px;
         @media (max-width: 1448px) {
           max-width: 1440px;
         }
@@ -207,22 +207,7 @@ export default {
       }
     }
     .m3 {
-        max-width: 100vw;
-      // @media (max-width: 1441px) {
-      //   max-width: 1440px;
-      // }
-      // @media (max-width: 769px) {
-      //   max-width: 768px;
-      // }
-      // img {
-      //   max-width: 1600px;
-      //   @media (max-width: 1441px) {
-      //     max-width: 1440px;
-      //   }
-      //   @media (max-width: 769px) {
-      //     max-width: 768px;
-      //   }
-      // }
+        max-width: 1920px;
     }
   }
 }
