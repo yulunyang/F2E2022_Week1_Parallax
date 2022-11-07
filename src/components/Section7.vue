@@ -22,7 +22,7 @@
         </ul>
       </div>
 
-      <div class="mb-24 md:mb-36 qa-list px-2">
+      <div class="mb-24 md:mb-36 qa-list px-3">
         <ul class="xl:text-lg tracking-wide">
           <li v-for="(item, idx) in computedData" :key="idx" class="mb-8 text-left">
             <p class="question proj-text-tertiary">Q:{{ item.title }}</p>

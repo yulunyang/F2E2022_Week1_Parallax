@@ -292,9 +292,6 @@ export default {
     width: 980px;
     height: 570px;
     background-color: #B82A06;
-    // @media (max-width: 767px) {
-    //   width: 100%;
-    // }
   }
 
   .section3 {

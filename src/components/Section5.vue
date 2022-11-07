@@ -10,9 +10,9 @@
             <img src="@/assets/img/flag/F3.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag3">
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item1_flag4">
           </div>
-          <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex items-end">
-            <div>
-              <h6 class="text-5xl proj-text-tertiary text-left mb-3">SIGN UP!</h6>
+          <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom" class="item-right pl-16 flex-1 flex flex-wrap items-end">
+            <div class="md:flex-1">
+              <h6 class="text-4xl md:text-5xl proj-text-tertiary text-left mb-3">SIGN UP!</h6>
               <div class="flex flex-col stretch flex-1 h-full content justify-between">
                 <p class="text-white text-left text-base lg:text-xl">開放報名：<br/>
                   10/13(四) 早上 11:00 - 11/6(日) 晚上 23:59</p>
@@ -21,8 +21,8 @@
                 </p>
               </div>
             </div>
-            <div class="text-base xl:text-3xl flex-1 pl-6">
-              <a class="button py-3 cursor-pointer w-auto px-8" href="https://2022.thef2e.com/signup">點我註冊報名!</a>
+            <div class="text-base xl:text-3xl flex-1 md:pl-6 flex mt-2 md:block">
+              <a class="button py-3 cursor-pointer w-auto px-8 inline-block" href="https://2022.thef2e.com/signup">點我註冊報名!</a>
             </div>
           </div>
         </li>
@@ -34,7 +34,7 @@
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item2_flag4">
           </div>
           <div ata-aos-delay="200" data-aos="fade-left" data-aos-offset="400" data-aos-anchor-placement="top-bottom"  class="item-right pl-16">
-            <h6 class="text-5xl proj-text-tertiary text-left mb-3">START!</h6>
+            <h6 class="text-4xl md:text-5xl proj-text-tertiary text-left mb-3">START!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
             <p class="text-white text-left text-base lg:text-xl">各組別開賽：<br/>
@@ -50,7 +50,7 @@
           <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item3_flag4">
           </div>
           <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
-            <h6 class="text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
+            <h6 class="text-4xl md:text-5xl proj-text-tertiary text-left mb-3">UPLOAD!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p></p>
             <p class="text-white text-left text-base lg:text-xl">登陸作品：<br/>
@@ -66,7 +66,7 @@
             <img src="@/assets/img/flag/F4.png" alt="" class="mx-auto absolute top-0 left-0 item4_flag4">
           </div>
           <div data-aos-delay="200" data-aos="fade-left" data-aos-offset="400" class="item-right pl-16">
-            <h6 class="text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
+            <h6 class="text-4xl md:text-5xl proj-text-tertiary text-left mb-3">STREAM!</h6>
             <div class="flex flex-col stretch flex-1 h-full content justify-between">
               <p class="text-white text-left text-base lg:text-xl">資深開發者到來 ，直播分享零阻礙！</p>
             <p class="text-white text-left text-base lg:text-xl">線上直播：<br/>

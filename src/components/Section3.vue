@@ -102,16 +102,16 @@ export default {
         opacity: 0,
         bottom: '40%',
         left: '50%',
-        xPercent: '-50',
-        yPercent: '-50',
+        // xPercent: '-50',
+        // yPercent: '-50',
         position: 'fixed'
       })
       tl.to('.section3-label-note', {
         opacity: 1,
         bottom: '40%',
         left: '50%',
-        xPercent: '-50',
-        yPercent: '-50',
+        // xPercent: '-50',
+        // yPercent: '-50',
         position: 'fixed'
       })
     }
@@ -205,6 +205,7 @@ export default {
         }
         @media (max-width: 768px) {
           max-width: 768px;
+          width: 80%;
         }
       img {
         max-width: 1200px;

@@ -21,15 +21,15 @@
           <ul class="text-left text-lg text-white list-disc leading-normal">
 
             <li class="mb-6">
-              <p class="text-2xl">初選佳作 共六十位 <span class="proj-text-primary">數位獎狀</span></p>
+              <p class="text-xl md:text-2xl">初選佳作 共六十位 <span class="proj-text-primary">數位獎狀</span></p>
               <p> 每週主題個人組十位、團體組十組</p>
             </li>
             <li class="mb-6">
-              <p class="text-2xl">個人企業獎 共六位 <span class="proj-text-primary">3,000/位</span></p>
+              <p class="text-xl md:text-2xl">個人企業獎 共六位 <span class="proj-text-primary">3,000/位</span></p>
               <p> 每週主題各 2 名，設計 1 位、前端 1 位</p>
             </li>
             <li class="mb-6">
-              <p class="text-2xl">團體企業獎 共三組 <span class="proj-text-primary">NTD 10,000/組</span></p>
+              <p class="text-xl md:text-2xl">團體企業獎 共三組 <span class="proj-text-primary">NTD 10,000/組</span></p>
               <p> 每週主題各 1 組</p>
             </li>
             <li>
