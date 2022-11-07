@@ -17,7 +17,6 @@ v16.18.0
 
 ### 使用技術
 1. Vue Cli
-1. Vuex
 1. Router
 1. SCSS/css
 1. Javascript
