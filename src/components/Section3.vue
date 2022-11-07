@@ -102,16 +102,12 @@ export default {
         opacity: 0,
         bottom: '40%',
         left: '50%',
-        // xPercent: '-50',
-        // yPercent: '-50',
         position: 'fixed'
       })
       tl.to('.section3-label-note', {
         opacity: 1,
         bottom: '40%',
         left: '50%',
-        // xPercent: '-50',
-        // yPercent: '-50',
         position: 'fixed'
       })
     }

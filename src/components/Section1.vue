@@ -7,7 +7,7 @@
         <div>HI- 99999</div>
         <div>Hex School</div>
       </div>
-      <div class="py-28 xl:py-36 px-10 md:px-16 xl:px-0">
+      <div class="py-28 xl:py-32 px-10 md:px-16 xl:px-0">
         <img src="@/assets/img/banner_LOGO1.png" alt="" class="object-contain block mx-auto">
       </div>
       <div class="flex justify-center flex-col items-center mb-48 xl:mb-36">
@@ -34,7 +34,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
 import { onMounted, ref, onBeforeMount } from 'vue'
@@ -90,7 +89,6 @@ export default {
 .neon-effect {
   color:#fff;
   animation: neon-shine 7s infinite;
-  // animation-delay: 6s;
 }
 
 @keyframes neon-shine{

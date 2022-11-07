@@ -61,7 +61,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
 import { onMounted } from 'vue'
@@ -78,12 +77,10 @@ export default {
         )
 
         const hide = (element) => {
-          // console.log('hide: ' + element)
           gsap.set(element, { opacity: 0, visibility: "hidden" })
         }
 
         const animated = (element) => {
-          // console.log('animated: ' + element)
           let x = 0
 
           if (element.classList.contains("from-left")) {

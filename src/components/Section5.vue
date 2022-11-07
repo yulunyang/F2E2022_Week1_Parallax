@@ -80,7 +80,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
 import { onMounted } from 'vue'

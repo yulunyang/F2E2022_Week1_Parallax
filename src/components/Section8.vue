@@ -60,9 +60,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
-gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
 import diamondLittle from '@/components/modules/diamond_little.vue'
 import diamondMiddle from '@/components/modules/diamond_middle.vue'
 import diamondLarge from '@/components/modules/diamond_large.vue'
@@ -94,7 +91,6 @@ export default {
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      // padding: 1em;
     }
   }
 }
