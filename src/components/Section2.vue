@@ -18,7 +18,7 @@
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
-          <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
+          <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
 
@@ -38,7 +38,7 @@
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
-          <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
+          <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
 
@@ -53,7 +53,7 @@
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
         </div>
         <div class="w-full xl:hidden mt-24">
-          <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
+          <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
     </ul>
@@ -292,6 +292,9 @@ export default {
     width: 980px;
     height: 570px;
     background-color: #B82A06;
+    // @media (max-width: 767px) {
+    //   width: 100%;
+    // }
   }
 
   .section3 {

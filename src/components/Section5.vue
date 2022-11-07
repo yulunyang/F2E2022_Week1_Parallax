@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="Section5 py-24">
+  <section class="Section5 py-28">
     <div class="p-4 pl-24 xl:pl-20 max-w-5xl mx-auto">
       <ul class="relative">
         <li class="ml-6 mt-12" id="section5_item1">

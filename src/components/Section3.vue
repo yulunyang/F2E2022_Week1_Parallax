@@ -4,7 +4,7 @@
     <div class="section3-main h-screen absolute" :class="{ 'sticky': scrolled, 'opacity-0 invisible': isHide }">
 
       <p class="section3-label text-4xl xl:text-7xl border-4 px-12 py-8 whitespace-nowrap absolute bottom-0">互動式網頁設計</p>
-      <p class="section3-label-note text-2xl whitespace-nowrap absolute bottom-0 text-white"> UI、前端接力合作，一同產出完整作品。</p>
+      <p class="section3-label-note text-base xl:text-2xl whitespace-nowrap absolute bottom-0 text-white"> UI、前端接力合作，一同產出完整作品。</p>
 
       <div class="section3-mountain left-0 w-full bottom-0 absolute">
         <div class="m1 w-full left-0 absolute bottom-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain"></div>
@@ -36,7 +36,6 @@ export default {
       window.removeEventListener("scroll", handleScroll)
     })
     const handleScroll = () => {
-      // console.log(window.pageYOffset)
       if (window.innerWidth >= 1440) {
         if (window.pageYOffset > 3400 && window.pageYOffset < 7796) {
           scrolled.value = true
@@ -62,6 +61,12 @@ export default {
       }
     }
     const gsapLabel = () => {
+      let fontSize
+      if (window.innerWidth >=1440) {
+        fontSize = '4.5rem'
+      } else {
+        fontSize = '2.5rem'
+      }
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: ".section3",
@@ -70,30 +75,29 @@ export default {
           scrub: true
         },
       })
+        tl.to('.section3-label', {
+          bottom: '30%',
+          left: '50%',
+          xPercent: '-50',
+          yPercent: '-50',
+          position: 'fixed',
+          color: '#FFC612',
+          borderColor: "#FFC612",
+          fontSize: fontSize,
+          borderWidth: '4px',
+          padding: '2rem 3rem'
+        })
+        tl.to('.section3-label', {
+          bottom: '40%',
+          left: '50%',
+          xPercent: '-50',
+          position: 'fixed',
+          color: '#ffffff',
+          borderColor: "white",
+          fontSize: fontSize,
+          ease: Cubic.out
+        })
 
-      tl.to('.section3-label', {
-        bottom: '30%',
-        left: '50%',
-        xPercent: '-50',
-        yPercent: '-50',
-        position: 'fixed',
-        color: '#FFC612',
-        borderColor: "#FFC612",
-        fontSize: '4.5rem',
-        borderWidth: '4px',
-        padding: '2rem 3rem'
-      })
-      tl.to('.section3-label', {
-        bottom: '40%',
-        left: '50%',
-        xPercent: '-50',
-        // yPercent: '-50',
-        position: 'fixed',
-        color: '#ffffff',
-        borderColor: "white",
-        fontSize: '4.5rem',
-        ease: Cubic.out
-      })
       tl.to('.section3-label-note', {
         opacity: 0,
         bottom: '40%',
@@ -112,6 +116,12 @@ export default {
       })
     }
     const gsapMoutain1 = () => {
+      let bottom
+      if (window.innerWidth >=1440) {
+        bottom = '-30%'
+      } else {
+        bottom = '-10%'
+      }
       const t3 = gsap.timeline({
         scrollTrigger: {
           trigger: ".section3",
@@ -121,7 +131,7 @@ export default {
         }
       })
       t3.to('.m1', {
-        bottom: '-30%',
+        bottom: bottom,
         duration: 1,
         position: 'fixed',
       })

@@ -4,26 +4,26 @@
     <div class="proj-bg-primary text-center text-2xl xl:text-4xl py-6">
       <h6 class="text-white">常見問答</h6>
     </div>
-    <div class="proj-container mx-auto px-6 py-12">
+    <div class="proj-container mx-auto md:px-6 py-12">
       <div class="mb-12">
-        <ul class="flex xl:text-3xl">
-          <li class="w-1/4 p-2">
-            <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 0 }" @click="selectedIdx = 0">一般常見問答</a>
+        <ul class="flex text-base xl:text-2xl">
+          <li class="w-1/4 p-1 md:p-2">
+            <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 0 }" @click="selectedIdx = 0"><span class="hidden lg:inline-block">一般</span>常見問答</a>
           </li>
-          <li class="w-1/4 p-2">
-            <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 1 }" @click="selectedIdx = 1">UI 設計師</a>
+          <li class="w-1/4 p-1 md:p-2">
+            <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 1 }" @click="selectedIdx = 1">UI設計師</a>
           </li>
-          <li class="w-1/4 p-2">
+          <li class="w-1/4 p-1 md:p-2">
             <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 2 }" @click="selectedIdx = 2">前端工程師</a>
           </li>
-          <li class="w-1/4 p-2">
+          <li class="w-1/4 p-1 md:p-2">
             <a class="block qa-button py-3 button cursor-pointer" :class="{ 'active': selectedIdx === 3 }" @click="selectedIdx = 3">團體組</a>
           </li>
         </ul>
       </div>
 
-      <div class="mb-36 qa-list">
-        <ul class="text-lg tracking-wide">
+      <div class="mb-24 md:mb-36 qa-list px-2">
+        <ul class="xl:text-lg tracking-wide">
           <li v-for="(item, idx) in computedData" :key="idx" class="mb-8 text-left">
             <p class="question proj-text-tertiary">Q:{{ item.title }}</p>
             <p class="answer text-white">A:{{ item.text }}</p>
@@ -39,9 +39,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin } from 'gsap/all'
-gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin )
 import { ref, reactive, computed } from 'vue'
 export default {
   setup () {

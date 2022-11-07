@@ -7,10 +7,10 @@
     <div class="gate gate-left gate-left-1 z-20 week1 overflow-hidden" id="section4_item1">
       <div class="mx-auto">
         <div class="titles mb-3">
-          <p class="proj-text-tertiary text-5xl mb-6">WEEK 1</p>
-          <h6 class="text-white text-6xl mb-10">The F2E 活動網站設計</h6>
-          <p class="text-white text-3xl mb-3">視差滾動</p>
-          <p class="text-white text-3xl mb-6">#版塊設計</p>
+          <p class="proj-text-tertiary text-4xl xl:text-5xl mb-6">WEEK 1</p>
+          <h6 class="text-white text-4xl xl:text-6xl mb-20 xl:mb-10">The F2E 活動網站設計</h6>
+          <p class="text-white text-2xl xl:text-3xl mb-3">視差滾動</p>
+          <p class="text-white text-2xl xl:text-3xl mb-6">#版塊設計</p>
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
@@ -28,10 +28,10 @@
     <div class="gate gate-left gate-left-2 z-10 week2 overflow-hidden" id="section4_item2">
       <div class="mx-auto">
         <div class="titles mb-3">
-          <p class="proj-text-tertiary text-5xl mb-6">WEEK 2</p>
-          <h6 class="text-white text-6xl mb-10">今晚，我想來點點簽</h6>
-          <p class="text-white text-3xl mb-3">canvas</p>
-          <p class="text-white text-3xl mb-6">#凱鈿行動科技</p>
+          <p class="proj-text-tertiary text-4xl xl:text-5xl mb-6">WEEK 2</p>
+          <h6 class="text-white text-4xl xl:text-6xl mb-20 xl:mb-10">今晚，我想來點點簽</h6>
+          <p class="text-white text-2xl xl:text-3xl mb-3">canvas</p>
+          <p class="text-white text-2xl xl:text-3xl mb-6">#凱鈿行動科技</p>
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
@@ -49,10 +49,10 @@
     <div class="gate gate-left gate-left-3 z-0 week3 overflow-hidden" id="section4_item3">
       <div class="mx-auto">
         <div class="titles mb-3">
-          <p class="proj-text-green text-5xl mb-6">WEEK 3</p>
-          <h6 class="text-white text-6xl mb-10">Scrum 新手村</h6>
-          <p class="text-white text-3xl mb-3">JS draggable</p>
-          <p class="text-white text-3xl mb-3">#鈦坦科技</p>
+          <p class="proj-text-green text-4xl xl:text-5xl mb-6">WEEK 3</p>
+          <h6 class="text-white text-4xl xl:text-6xl mb-20 xl:mb-10">Scrum 新手村</h6>
+          <p class="text-white text-2xl xl:text-3xl mb-3">JS draggable</p>
+          <p class="text-white text-2xl xl:text-3xl mb-3">#鈦坦科技</p>
         </div>
         <div class="relative flag-container">
           <div class="absolute flag-inner">
@@ -234,7 +234,7 @@ export default {
         left: 48%;
       }
       @media (max-width: 768px) {
-        top: 61%;
+        top: 62%;
         left: 46%;
       }
     }
@@ -253,7 +253,7 @@ export default {
       // background-origin: center;
     }
     @media (max-width: 768px) {
-      background-position: center;
+      background-position: bottom;
       // background-origin: left;
     }
     .flag-container {
@@ -291,7 +291,7 @@ export default {
       background-position: center;
     }
     @media (max-width: 768px) {
-      background-position: center;
+      background-position: bottom;
     }
     .flag-container {
       width: 100%;
@@ -317,7 +317,7 @@ export default {
         bottom: 32%;
         @media (max-width: 768px) {
           height: 0;
-          left: -50%;
+          left: -60%;
           z-index: -1;
         }
       }
@@ -333,7 +333,7 @@ export default {
       background-position: center;
     }
     @media (max-width: 768px) {
-      background-position: center;
+      background-position: bottom;
     }
     .flag-container {
       width: 100%;
