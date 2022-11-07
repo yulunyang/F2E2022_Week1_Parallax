@@ -1,4 +1,4 @@
-![This is a alt text.](./view.png)
+![This is a alt text.](./public/view.png)
 # Week 1 - The F2E 活動網站設計
 
 ## 比賽網址
