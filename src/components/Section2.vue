@@ -1,10 +1,10 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section class="section2 overflow-hidden">
-    <ul class="flex flex-wrap">
+    <ul class="flex flex-wrap w-full">
       <li class="boxwrap-half section2_item item1 mb-48 w-full xl:w-auto flex-wrap">
         <div class="relative">
-          <div class="animation-wrapper box2 from-left flex items-center">
+          <div class="animation-wrapper box2 from-left flex items-center justify-center">
             <img src="@/assets/img/web1.gif" alt="" class="mx-auto">
           </div>
           <div class="quote-outer absolute" data-aos-delay="500" data-aos="fade-up" data-aos-offset="200">
@@ -17,7 +17,7 @@
         <div class="ease-text ease-text1 absolute z-50 hidden xl:block" data-aos-delay="600" data-aos="fade-up">
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto">
         </div>
-        <div class="w-full xl:hidden mt-24">
+        <div class="w-full xl:hidden mt-24 px-2">
           <img src="@/assets/img/quote_title1.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
@@ -37,7 +37,7 @@
         <div class="ease-text ease-text2 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up" data-aos-offset="100">
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto">
         </div>
-        <div class="w-full xl:hidden mt-24">
+        <div class="w-full xl:hidden mt-24 px-2">
           <img src="@/assets/img/quote_title2.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
@@ -52,7 +52,7 @@
         <div class="ease-text ease-text3 absolute hidden xl:block" data-aos-delay="600" data-aos="fade-up">
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto">
         </div>
-        <div class="w-full xl:hidden mt-24">
+        <div class="w-full xl:hidden mt-24 px-2">
           <img src="@/assets/img/quote_title3.png" alt="" class="mx-auto object-contain">
         </div>
       </li>
@@ -203,8 +203,8 @@ export default {
             left: -2%;
           }
           @media (max-width: 768px) {
-            top: -14%;
-            left: 12%;
+            top: -10%;
+            left: 10%;
           }
         .quote {
           background-image: url('@/assets/img/quote2.png');
@@ -213,12 +213,20 @@ export default {
           background-size: 341px 195px;
           width: 341px;
           height: 195px;
+          @media (max-width: 768px) {
+            background-size: 215px 123px;
+            width: 215px;
+            height: 123px;
+          }
         }
       }
       .soldier {
         position: absolute;
         bottom: 0%;
         left: 30%;
+        @media (max-width: 768px) {
+          left: 20%;
+        }
       }
       .ease-text {
         top: 55%;
@@ -292,6 +300,13 @@ export default {
     width: 980px;
     height: 570px;
     background-color: #B82A06;
+    @media (max-width: 768px) {
+      width: 768px;
+    }
+    @media (max-width: 425px) {
+      width: 425px;
+      height: 447px;
+    }
   }
 
   .section3 {
