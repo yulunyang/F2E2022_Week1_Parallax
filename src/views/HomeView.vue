@@ -39,7 +39,7 @@ export default {
     Section8
   },
   setup () {
-    const isLoading = ref(true)
+    const isLoading = ref(false)
     const timer = ref(null)
 
     onMounted(() => {

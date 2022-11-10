@@ -1,17 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <section class="section3 overflow-hidden w-full relative">
-    <div class="section3-main h-screen absolute" :class="{ 'sticky': scrolled, 'opacity-0 invisible': isHide }">
+  <section class='section3 section3-bg'>
+    <div class='box-bg box-bg-1 z-20'></div>
+    <div class='box-bg box-bg-2 z-10'></div>
+    <div class='box-bg box-bg-3'></div>
 
-      <p class="section3-label text-4xl xl:text-7xl border-4 px-12 py-8 whitespace-nowrap absolute bottom-0">互動式網頁設計</p>
-      <p class="section3-label-note text-base xl:text-2xl whitespace-nowrap absolute bottom-0 text-white"> UI、前端接力合作，一同產出完整作品。</p>
+    <p class='section3-label text-4xl xl:text-7xl border-4 px-12 py-8 whitespace-nowrap absolute bottom-0 text-white z-20'>互動式網頁設計</p>
+    <p class='section3-label-note text-base xl:text-2xl whitespace-nowrap absolute bottom-0 text-white z-20'> UI、前端接力合作，一同產出完整作品。</p>
 
-      <div class="section3-mountain left-0 w-full bottom-0 absolute">
-        <div class="m1 w-full left-0 absolute bottom-0"><img src="@/assets/img/L1.png" alt="" class="mx-auto object-contain"></div>
-        <div class="m2 right-0 absolute bottom-0"><img src="@/assets/img/L2.png" alt="" class="mx-auto object-contain"></div>
-        <div class="m3 left-0 absolute bottom-0"><img src="@/assets/img/L3.png" alt="" class="mx-auto object-contain"></div>
-        <div class="m4 w-full left-0 absolute bottom-0"><img src="@/assets/img/L5.png" alt="" class="mx-auto object-contain"></div>
-      </div>
+    <div class='bg-1 z-20'>
+      <img src='@/assets/img/L1.png' alt=''>
+    </div>
+    <div class='bg-2 z-20'>
+      <img src='@/assets/img/L2.png' alt=''>
+    </div>
+    <div class='bg-3 z-20'>
+      <img src='@/assets/img/L3.png' alt=''>
+    </div>
+    <div class='bg-4 z-20'>
+      <img src='@/assets/img/L5.png' alt=''>
     </div>
   </section>
 
@@ -20,207 +27,191 @@
 <script>
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear, Cubic } from 'gsap/all'
 gsap.registerPlugin(gsap, ScrollTrigger, Draggable, MotionPathPlugin, TextPlugin, Power3, Linear, Cubic )
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted } from 'vue'
 export default {
   setup () {
-    const scrolled = ref(false)
-    const isHide = ref(false)
+
     onMounted(()=> {
-      window.addEventListener("scroll", handleScroll)
-      gsapLabel()
-      gsapMoutain1()
-      gsapMoutain2()
-      gsapMoutain3()
+      gsapInit()
     })
-    onUnmounted(()=> {
-      window.removeEventListener("scroll", handleScroll)
-    })
-    const handleScroll = () => {
-      if (window.innerWidth >= 1440) {
-        if (window.pageYOffset > 3400 && window.pageYOffset < 7796) {
-          scrolled.value = true
-        } else {
-          scrolled.value = false
-        }
-        if (window.pageYOffset > 6800) {
-          isHide.value = true
-        } else {
-          isHide.value = false
-        }
-      } else {
-        if (window.pageYOffset > 3512 && window.pageYOffset < 6800) {
-          scrolled.value = true
-        } else {
-          scrolled.value = false
-        }
-        if (window.pageYOffset > 6800) {
-          isHide.value = true
-        } else {
-          isHide.value = false
-        }
-      }
-    }
-    const gsapLabel = () => {
+
+    const gsapInit = () => {
+      const mql = window.matchMedia('(max-width:768px)')
       let fontSize
+      let noteTop
       if (window.innerWidth >=1440) {
         fontSize = '4.5rem'
+        noteTop = '-950'
       } else {
         fontSize = '2.5rem'
+        noteTop = '-1200'
       }
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".section3",
-          start: 'top 0%',
-          end: 'bottom 90%',
-          scrub: true
-        },
+      const scrolled = gsap.timeline({
+        scrollTrigger:{
+          trigger:'.section3-bg',
+          pin: true,
+          markers: false,
+          scrub: true,
+        }
       })
-        tl.to('.section3-label', {
-          bottom: '30%',
-          left: '50%',
-          xPercent: '-50',
-          yPercent: '-50',
-          position: 'fixed',
-          color: '#FFC612',
-          borderColor: "#FFC612",
-          fontSize: fontSize,
-          borderWidth: '4px',
-          padding: '2rem 3rem'
-        })
-        tl.to('.section3-label', {
-          bottom: '40%',
-          left: '50%',
-          xPercent: '-50',
-          position: 'fixed',
-          color: '#ffffff',
-          borderColor: "white",
-          fontSize: fontSize,
-          ease: Cubic.out
-        })
+      scrolled.to('.box-bg-1', { opacity: '0' })
 
-      tl.to('.section3-label-note', {
-        opacity: 0,
-        bottom: '40%',
-        left: '50%',
-        position: 'fixed'
-      })
-      tl.to('.section3-label-note', {
-        opacity: 1,
-        bottom: '40%',
-        left: '50%',
-        position: 'fixed'
-      })
-    }
-    const gsapMoutain1 = () => {
-      let bottom
-      if (window.innerWidth >=1440) {
-        bottom = '-30%'
-      } else {
-        bottom = '-10%'
+      scrolled.to('.section3-label', {
+        yPercent:'-160',
+          color: '#FFC612',
+          borderColor: '#FFC612',
+          fontSize: fontSize,
+          xPercent:'-50',
+      }, '<')
+
+      scrolled.to('.bg-1', {
+        yPercent:'10',
+      }, '<')
+      scrolled.to('.bg-2', {
+        yPercent:'50',
+      }, '<')
+      scrolled.to('.bg-3', {
+        yPercent:'50',
+      }, '<')
+      scrolled.to('.box-bg-2', { opacity: '0' })
+
+      scrolled.to('.section3-label', {
+        yPercent:'-250',
+        color: '#ffffff',
+        borderColor: 'white',
+        fontSize: fontSize
+      }, '<')
+      scrolled.to('.section3-label-note', {
+        yPercent: noteTop,
+        color: '#ffffff',
+        opacity: 1
+      }, '<')
+
+      scrolled.to('.bg-1', {
+        yPercent:'50',
+      }, '<')
+      scrolled.to('.bg-2', {
+        yPercent:'100',
+      }, '<')
+      scrolled.to('.bg-3', {
+        yPercent:'100',
+      }, '<')
+
+      if (mql.matches) {
+        scrolled.to('.box-bg-1', { opacity: '0' })
+        scrolled.to('.section3-label', {
+          yPercent:'-150',
+        }, '<')
+        scrolled.to('.bg-1', {
+          yPercent:'10',
+        }, '<')
+        scrolled.to('.bg-2', {
+          yPercent:'50',
+        }, '<')
+        scrolled.to('.bg-3', {
+          yPercent:'50',
+        }, '<')
+        scrolled.to('.box-bg-2', { opacity: '0' })
+        scrolled.to('.section3-label', {
+          yPercent:'-300',
+        }, '<')
+        scrolled.to('.bg-1', {
+          yPercent:'50',
+        }, '<')
+        scrolled.to('.bg-2', {
+          yPercent:'100',
+        }, '<')
+        scrolled.to('.bg-3', {
+          yPercent:'100',
+        }, '<')
+        // scrolled.to('.section3-label-note', {
+        //   yPercent:'-300',
+        // }, '<')
       }
-      const t3 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".section3",
-          start: 'top 100vh',
-          end: 'bottom 0',
-          scrub: true
-        }
-      })
-      t3.to('.m1', {
-        bottom: bottom,
-        duration: 1,
-        position: 'fixed',
-      })
     }
-    const gsapMoutain2 = () => {
-      const t4 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".section3",
-          start: 'top 100vh',
-          end: 'bottom 0',
-          scrub: true
-        }
-      })
-      t4.to('.m2', {
-        bottom: '-60%',
-        position: 'fixed',
-      })
-    }
-    const gsapMoutain3 = () => {
-      const t5 = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".section3",
-          start: 'top 100vh',
-          end: 'bottom 0',
-          scrub: true
-        }
-      })
-      t5.to('.m3', {
-        bottom: '-60%',
-        position: 'fixed',
-      })
-    }
-    return { gsapLabel, gsapMoutain1, gsapMoutain2, gsapMoutain3, handleScroll, scrolled, isHide }
+    return { gsapInit }
   }
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang='scss'>
+  .section3 {
+    height: 100vh;
+    position: relative;
+    margin-bottom: 500px;
 
-.section3 {
-  width: 100vw;
-  height: 400vh;
-  background: -webkit-linear-gradient(-180deg, rgb(0, 0, 0), rgb(204, 79, 54), rgb(255, 179, 164));
-  background: linear-gradient(-180deg, rgb(0, 0, 0), rgb(204, 79, 54), rgb(255, 179, 164));
-  .section3-main {
-    transition: .3s;
-    top: 0;
-    width: 100%;
-    left: 0%;
     .section3-label {
+      position: absolute;
+      bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
-      border-color: #FFC612;
-      color: #FFC612;
+      text-align: center;
+
+      // h3 {
+      //   display: inline-block;
+      //   border: 3px solid white;
+      //   padding: 40px 80px;
+      //   margin-bottom: 16px;
+      //   color: #FFC612;
+      // }
     }
     .section3-label-note {
-      opacity: 0;
+      position: absolute;
+      bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
+      text-align: center;
+
+      // h3 {
+      //   display: inline-block;
+      //   border: 3px solid white;
+      //   padding: 40px 80px;
+      //   margin-bottom: 16px;
+      //   color: #FFC612;
+      // }
     }
-  .section3-mountain {
-    max-width: 1920px;
-    width: 100%;
-    .m1 {
-      max-width: 1920px;
+    .bg-1 {
+      position: absolute;
+      bottom: 0;
     }
-    .m2 {
-      max-width: 1920px;
-        @media (max-width: 1448px) {
-          max-width: 1440px;
-        }
-        @media (max-width: 768px) {
-          max-width: 768px;
-          width: 80%;
-        }
-      img {
-        max-width: 1200px;
-        @media (max-width: 1441px) {
-          max-width: 1440px;
-        }
-        @media (max-width: 769px) {
-          max-width: 768px;
-        }
-      }
+
+    .bg-2 {
+      position: absolute;
+      width: 70%;
+      bottom: 0;
+      right: 0;
     }
-    .m3 {
-        max-width: 1920px;
+
+    .bg-3 {
+      position: absolute;
+      width: 80%;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bg-4 {
+      position: absolute;
+      bottom: 0;
     }
   }
-}
-  .sticky {
-    position: fixed;
-    width: 100vw;
+
+  .section3-bg {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    .box-bg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(0deg, #CC4F36, #000000);
+    }
+    .box-bg-2 {
+      background: linear-gradient(0deg, #FFB3A4, #CC4F36);
+    }
+
+    .box-bg-3 {
+      background: #FFB3A4;
+    }
   }
-}
 </style>
