@@ -9,7 +9,7 @@
 設計師(稿)的詳細資料 [連結](https://www.figma.com/file/8RVl4ySfbKgWHa5Wz7gMh7/%E5%B0%8F%E8%8F%9C_F2E_project1?node-id=141%3A242).
 
 ### Demo(最小寬度768px)
-[https://yulunyang.github.io/F2E_Week1_Parallax/](https://yulunyang.github.io/F2E_Week1_Campaign-official-website/)
+https://yulunyang.github.io/F2E_Week1_Parallax/
 
 ### 使用技術
 1. Vue Cli
